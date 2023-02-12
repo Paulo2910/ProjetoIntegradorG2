@@ -34,19 +34,41 @@
         <a href="">Voltar</a>
     </div>
 
-    <section class="detalhes-produto">
-        <div class="detalhes-img">
+    <main class="detalhes-produto">
+        <section class="detalhes-img">
             <img src="/public/img/Barriguinha de Porco.jpg" alt="">
-        </div>
+        </section>
 
-        <div class="detalhes-descricao">
-            <h1 class="nome-prato">Barriga de Porco</h1>
-            <p class="descricao-produto">Porco agridoce ao molho de feijão moyashi e vegetais orgânicos. Este é o prato mais popular do sudeste asiático, consumido em feiras urbanas e também em toda zona rural. A barriga de porco é preparada com os melhores temperos. </p>
+        <section class="detalhes-descricao">
+            
+            <div class="detalhes-prato">
+                <h1 class="nome-prato">Barriga de Porco</h1>
+                <p class="descricao-produto">Porco agridoce ao molho de feijão moyashi e vegetais orgânicos. Este é o prato mais popular do sudeste asiático, consumido em feiras urbanas e também em toda zona rural. A barriga de porco é preparada com os melhores temperos. </p>
+            </div>
 
-        </div>
+            <form action="" method="POST" >
+                <select name="pimenta" id="pimenta">
+                    <label for="form">Pimenta?</label><br>
+                    <input type="radio" id="nenhuma-pimenta" name="nenhuma-pimenta" value="nenhuma-pimenta">
+                    <label for="nenhuma-pimenta">Nenhuma Pimenta</label><br>
+                    <input type="radio" id="pouca-pimenta" name="pouca-pimenta" value="pouca-pimenta">
+                    <label for="pouca-pimenta">Pouca Pimenta</label><br>
+                    <input type="radio" id="muita-pimenta" name="muita-pimenta" value="muita-pimenta">
+                    <label for="muita-pimenta">Muita Pimenta</label><br>
+                </select>
+            </form>
 
+            <div class="preco">
+                <h5>Valor Final</h5> 
+                <p>80,50</p>
+            </div>
 
-    </section>
+            <button type="submit" >ADICIONAR AO CARRINHO</button>
+
+        </section>
+    </main>
     
+
+
 </body>
 </html>
