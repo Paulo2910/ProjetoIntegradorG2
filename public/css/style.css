@@ -15,7 +15,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 250px);
     z-index: 1; 
 }
 
@@ -109,12 +109,26 @@ nav img {
 main {
     background: #C3103C;
     width: 100%;
-    height: 80vh;
+    height: 650px;
+    position: relative;
     
+}
+
+#image-banner {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    z-index: 1;
+}
+
+#image-banner img {
+    width: 250px;
 }
 
 
 .section-content {
+    margin-top: 80px;
+    padding-bottom: 40px;
     width: 100%;
     height: 50vh;
     display: flex;
@@ -124,6 +138,8 @@ main {
 
 }
 .cards {
+
+    z-index: 5;
     display: flex;
     padding: 50px;
     
@@ -156,16 +172,26 @@ section.card .icon  {
 }
 
 .back-title {
-    width: 80%;
+    max-width: 250px;
+    white-space: pre-line;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: 'Roboto';
+      
     
 }
 
 section.card h3 {
-    padding-bottom: 20px;
+    margin: 1px 0;
+    text-transform: uppercase;
+    color: #C3103C;
+    
 }
 
 section.card p {
-    padding-bottom: 30px;
+    text-transform: capitalize;
+    color: rgb(150, 154, 157);
+    
 }
 
 section.card img {
@@ -175,7 +201,7 @@ section.card img {
 
 section.card button {
     width: 200px;
-    padding: 8px;
+    padding: 1em 1rem;
     font-family: 'Roboto';
     font-size: 15px;
     text-transform: uppercase;
@@ -213,6 +239,201 @@ section.card button {
     text-transform: uppercase;
     text-decoration: underline;
     color: white;
+}
+
+.nav-section {
+    margin: 20px;
+    display: flex;
+    
+   
+}
+
+.nav-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-info img {
+    width: 45%;
+    border-radius: 20px;
+}
+
+.container-hours {
+    margin: 0 auto;
+    padding: 0 40px;
+
+}
+
+.container-hours h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'inika';
+    color: #F2567C;
+
+}
+
+.container-hours h3 {
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 25px;
+    color: #846F6F;
+}
+
+.container-hours ul {
+    margin: 50px auto;
+    font-size: 25px;
+    font-family: 'Roboto';
+    text-transform: capitalize;
+}
+
+.container-hours li {    
+    list-style: none;
+    color: #C3103C;
+}
+
+.nav-section-01 {
+    display: flex;
+}
+
+.container-section {
+    margin: 100px;
+    padding: 20px;
+    padding-top: 40px;
+    border-top: 1px solid #c3103d2c;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container-section .card-second {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0 100px;
+}
+
+.container-section .icon-info {
+    position: absolute;
+    z-index: 5;
+    top: 80px;
+    left: 30px;
+}
+
+
+
+.container-section .icon-info h1 {
+    font-size: 80px;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    color: #F2567C;
+}
+
+.container-section .icon-info p {
+    color: white;
+    width: 90%;
+    font-size: 20px;
+    font-family: 'inika';
+    text-transform: capitalize;
+}
+
+.icon-info span {
+    color: white;
+}
+
+.icon-info button {
+    width: 35%;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background: #F8E26F;
+    cursor: pointer;
+}
+
+.container-section img {
+    width: 550px;
+    height: 400px;
+    filter: brightness(40%);
+    border-radius: 20px;
+    
+}
+
+footer {
+    background: black;
+}
+
+footer .menu-footer {
+    padding: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer a {
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+footer a :hover {
+    color: #C3103C;
+}
+footer li {
+    color: white;
+    list-style: none;
+    margin-left: 50px;
+}
+
+
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: auto;  
+}
+
+.logo-footer p {
+    color: white;
+    padding-bottom: 30px;
+}
+.logo-footer img {
+    width: 200px;
+    margin: auto;
+    
+}
+
+.rede-sociais {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+footer .rede-sociais img {
+    width: 40px;
+    margin-left: 20px;
+}
+
+footer p {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 720px) {
+
+    .section-content .card{
+        flex-direction: column;       
+
+    }
+    
 }
 
 
