@@ -86,28 +86,28 @@ main {
 }
 
 .contain {
-    position: relative;
-    display: flex;  
+    display: flex; 
+    justify-content:center ; 
     flex-wrap: wrap;
-    margin: 80px 10%;
+    margin: 50px 15px;
     grid-gap: 50px;   
 
 }
 
 .content {
    display: flex;
-   justify-content: center;    
-         
+   
+          
 }
 
 .cards {
     padding-top: 50px;
     display: flex;
-    width: 75%;
     
 }
 
 .card {
+    width: 100%;
     border-radius: 15px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
