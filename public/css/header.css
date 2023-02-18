@@ -1,0 +1,249 @@
+/**Fontes do Google**/
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inria+Sans:wght@300&family=Inter:wght@900&family=Josefin+Sans:wght@100&family=Public+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+/*****************/
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {  
+    background-image: url('/img/Banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    z-index: 1; 
+}
+
+nav.container {
+    padding: 15px ;
+    z-index: 5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    
+
+}
+
+.container ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 50px;
+    margin-right: 200px;
+    
+}
+
+nav .logo {
+    margin: auto;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.logo img {
+    width: 180px;
+    height: 70px;
+}
+
+
+.container a{
+    font-style: none;
+    text-decoration: none;
+    font-family: 'inika';
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+ul a:hover {
+    color: rgb(244, 140, 49);
+    filter: brightness(100%);
+}
+
+.container li {
+    list-style: none;
+    
+    
+}
+
+nav img {
+    width: 40px;
+    height: 40px;
+}
+
+header .page-title {
+    padding: 25px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+   
+}
+
+main {
+    width: 100%;
+}
+
+.contain {
+    position: relative;
+    display: flex;  
+    flex-wrap: wrap;
+    margin: 80px 10%;
+    grid-gap: 50px;   
+
+}
+
+.content {
+   display: flex;
+   justify-content: center;    
+         
+}
+
+.cards {
+    padding-top: 50px;
+    display: flex;
+    width: 75%;
+    
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px 15px 0 0;
+}
+
+.cards .back-title {
+    width: 400px;
+    position: relative;
+    text-align: center;
+    padding: 40px;
+}
+
+.back-title h3 {
+    font-family: 'inika';
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.back-title p {
+    color: rgb(109, 106, 101);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.back-title span {
+    font-family: 'inika';
+    font-size: 30px;
+    font-weight: bold;
+    color: #C3103C;
+
+}
+
+.back-title button {
+
+    width: 200px;
+    padding: 1em 1rem;
+    font-family: 'Roboto';
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    background: rgba(248, 226, 111, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background: black;
+    margin-top: 150px;
+}
+
+footer .menu-footer {
+    padding: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer a {
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+footer a :hover {
+    color: #C3103C;
+}
+footer li {
+    color: white;
+    list-style: none;
+    margin-left: 50px;
+}
+
+
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: auto;  
+}
+
+.logo-footer p {
+    color: white;
+    padding-bottom: 30px;
+}
+.logo-footer img {
+    width: 200px;
+    margin: auto;
+    
+}
+
+.rede-sociais {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+footer .rede-sociais img {
+    width: 40px;
+    margin-left: 20px;
+}
+
+footer p {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}

@@ -8,14 +8,16 @@
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
+    
 }
+
 
 header {  
     background-image: url('/img/Banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: calc(100vh - 250px);
+    height: 550px;
     z-index: 1; 
 }
 

@@ -6,9 +6,12 @@ const app = express(); // Guarda a execução do express.
 const PORT = process.env.PORT || 3000;
 const indexRouter = require('./router/indexRouter');
 
+app.use(express.json());
+app.use(express.urlencoded());
 
 // Importar as rotas
-app.get('/', indexRouter);
+app.use('/', indexRouter);
+
 app.set('view engine', 'ejs');
 app.set('views', './views')
 app.use(express.static(path.join(__dirname, "public")))//Importando a pasta Public ativando o CSS.
