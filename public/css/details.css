@@ -1,14 +1,15 @@
 /*detalhes do produto*/
 
-.back{
+a, .back{
     text-decoration: none;
     margin:20px;
     font-family: 'roboto';
+    color:#C3103C;
 }
 
 .detalhes-produto{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: center;
     margin-left: 80px;
     max-width: 1200px;
     max-height: 1000;
@@ -16,10 +17,12 @@
     border-radius: 15px;
     padding: 20px;
     background-color: white;
+    align-items: center;
 }
 
-.detalhes-img{
-    max-width: 800px;
+img, .detalhes-img{
+    width: 600px;
+    height: 450px;
     border-radius: 15px;
 }
 
