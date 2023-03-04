@@ -1,38 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/header.css">
-    <title>DIM-SUM - Comida Chinesa</title>
-</head>
-<body>
-    <header>    
-        <nav class="container">
-            <ul>
-                <div class="logo">
-                    <a href="/"><img src="/img/Logo.png" alt=""></a>
-                </div>          
-                <a href="/">
-                    <li>Home</li>
-                </a>
-                <a href="/cardapios">
-                    <li>Cardápio</li>
-                </a>
-                <a href="">
-                    <img src="/img/User.png" alt="">
-                </a>
-                <a href="">
-                    <img src="/img/Cart.png" alt="">
-                </a>
-            </ul>
-        </nav>
-        <div class="page-title">
-            <h1>Cardápio</h1> 
-        </div>        
-   </header>
+<body> 
+   
+        <%- include ("./partials/Header.ejs") %> <!--Metodo de Chamada do Header Dinamico-->
 
+        <div class="page-title">
+            <h1><%= titulo %></h1> 
+        </div> 
+     
    <main>
     <div class="contain">
         <nav class="content">
@@ -144,47 +117,8 @@
    </main>
 
 
+   <%- include ('./partials/Footer.ejs')  %> <!--Método de chamada do Footer Dinâmico-->
 
 
-
-
-
-
-
-   <footer>
-    <div class="menu-footer">
-        <div class="logo-footer">
-            <img src="/img/Logo.png" alt="">
-            <p>Rua Santiago Amorin,52 | Bairro Longa Vida</p>
-        </div>
-            
-            <ul>                             
-                <a href="">
-                    <li>Delivery</li>
-                </a>
-                <a href="">
-                    <li>Reservas</li>
-                </a>
-                <a href="">
-                    <li>Contatos</li>
-                </a>
-                <a href="">
-                    <li>SObre-Nós</li>
-                </a>                        
-            </ul>
-            <div class="rede-sociais">
-                <a href="">
-                    <img src="/img/Face.png" alt="">
-                </a>
-                <a href="">
-                    <img src="/img/Insta.png" alt="">
-                </a>
-                <a href="">
-                    <img src="/img/Whats.png" alt="">
-                </a>
-            </div>
-            <p>Copyright © 2022 Dim Sum - Todos os direitos reservados</p>
-    </div>
-</footer>
 </body>
 </html>

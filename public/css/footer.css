@@ -1,0 +1,75 @@
+
+footer {
+    background: black;
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+footer .menu-footer {
+    padding: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    gap: 20px;
+}
+
+footer a {
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+footer a :hover {
+    color: #C3103C;
+}
+footer li {   
+    color: white;
+    list-style: none;
+   
+}
+
+
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: auto;  
+}
+
+.logo-footer p {
+    color: white;
+    padding-bottom: 30px;
+}
+.logo-footer img {
+    width: 200px;
+    margin: auto;
+    
+}
+
+.rede-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+    gap: 20px;
+}
+
+footer .rede-sociais img {
+    width: 35px;
+    
+}
+
+footer p {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}

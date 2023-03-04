@@ -1,15 +1,17 @@
 const express = require('express');
 const router = express.Router();
 
-const indexController = require('../controllers/indexController')
-const cardapioController = require('../controllers/cardapioController');
-const produtosController  = require('../controllers/produtosController')
+const indexController = require('../controllers/indexController');
+const cardapioController = require('../controllers/menuController');
+const produtosController  = require('../controllers/productController');
+const cartController = require('../controllers/cartController');
 
 
 
 router.get('/', indexController.index);
-router.get('/cardapios', cardapioController.index)
-router.get('/produto', produtosController.index)
-//router.get('/detalhes', (req, res) => res.render('./views/detalhesProdutos'));
+router.get('/cardapios', cardapioController.menu);
+router.get('/produto', produtosController.product);
+router.get('/carrinho', cartController.cart)
+
 
 module.exports = router;
