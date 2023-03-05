@@ -3,6 +3,7 @@
     width: 100%;
     padding: 50px;
     
+    
 }
 
 
@@ -11,6 +12,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 100px;
+    margin-top: 50px;
     
 }
 
@@ -21,6 +23,30 @@
     gap: 20px;
 
     
+}
+
+#container .pagination {
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    left: 30px;
+    
+   
+}
+#container .pagination a {
+    margin: auto 0;
+    font-family: 'Roboto' !important;
+    
+}
+
+#container .pagination p {
+
+    font-family: 'Roboto';
+    color: rgb(244, 140, 49);
+}
+
+.pagination a:hover {
+    color: #f26e8f;
 }
 
 #wrap-img {
@@ -54,6 +80,56 @@
 #wrap-img hr {
     color: #C3103C;
     margin:  8px 0 8px 0;
+}
+
+#align-cards {
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: nowrap;
+    gap: 50px;
+
+    
+
+}
+
+#wrap-card {  
+    position: relative;
+    
+    
+    box-shadow: 2px 2px 2px 2px rgba(55, 54, 54, 0.396);
+    border-top: 15px solid #C3103C;
+    border-radius: 10px 10px 10px 10px;
+    height: 28vh;
+}
+
+
+#card-add span {    
+    font-size: 30px;
+    background-color: #C3103C;
+    color: white;
+
+    margin-left: 75%;
+ 
+    padding: 2px 10px 2px 10px;
+
+    border-radius: 20px;
+}
+
+
+#card-add img{
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    height: 150px;
+}
+
+#card-add h1 {
+    font-size: 35px;
+    font-family: 'Tilt Neon';
+    font-weight: 400;
 }
 
 #direction {
@@ -176,4 +252,15 @@
 
 #wrap-totals p {
     font-size: 50px;
+}
+
+
+@media (max-width: 720px) {
+    #align-cards {
+        flex-wrap: wrap;
+    }
+
+    #wrap-card {
+        height: 33vh;
+    }
 }
