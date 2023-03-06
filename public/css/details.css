@@ -20,7 +20,7 @@ a, .back{
     align-items: center;
 }
 
-.detalhes-img{
+#imagemPrato{
     width: 600px;
     height: 450px;
     border-radius: 15px;
@@ -45,6 +45,10 @@ a, .back{
     text-align: center;
     margin-bottom: 20px;
     text-transform: uppercase;
+}
+
+.tamanho{
+    margin-bottom: 20px;
 }
 
 .pimenta{
