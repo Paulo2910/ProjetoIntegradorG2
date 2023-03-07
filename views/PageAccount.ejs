@@ -14,18 +14,80 @@
         <nav id="nav-account">
             <img id="profilePicture" src="" alt="foto de perfil">
 
-            <h2>Olá, </h2>
+            <h2>Olá, !</h2>
 
             <ul id="accountOption">
                 <li><a href="#dadosPessoais">Dados Pessoais</a></li>
                 <li><a href="#endereco">Endereço</a></li>
                 <li><a href="#pedidos">Pedidos</a></li>
                 <li><a href="#cartoes">Cartões</a></li>
-                <li><a href="#sair">Sair</a></li>
+                <li><a href="/">Sair</a></li>
             </ul>
         </nav>
 
-        <div>
+        <div id="dadosPessoais">
+            
+            <h2 class="titulo-div">Dados Pessoais</h2><br>
+            
+            <form id="userData" action="">
+                <label for="name">Nome</label>
+                <input type="text" id="name"><br>
+
+                <label for="dateOfBirth">Data de Nascimento</label>
+                <input type="date" id="dateOfBirth"><br>
+
+                <label for="gender">Genero</label>
+                <option value="masc" id="masc" class="gender">Masculino</option>
+                <option value="fem" id="fem" class="gender">Feminino</option>
+                <option value="nomBinare" id="nomBinare" class="gender">Não Binario</option>
+
+                <button id="buttonDadosPessoais">Salvar</button>
+            </form>
+
+        </div>
+
+        <div id="endereco">
+
+            <h2 class="titulo-div">Endereço</h2>
+
+            <form id="formEndereco" action="">
+
+                <label for="rua">Rua</label>
+                <input id="rua" type="text"><br>
+
+                <label for="numero">N°</label>
+                <input id="numero" type="number"><br>
+
+                <label for="bairro">Bairro</label>
+                <input id="bairro" type="text"><br>
+
+                <label for="cidade">Cidade</label>
+                <input id="cidade" type="text"><br>
+
+                <label for="cep">CEP</label>
+                <input id="cep" type="number"><br>
+
+                <button id="buttonEndereco" >Atualizar Endereço</button>
+
+            </form>
+
+        </div>
+
+        <div id="cartoes">
+
+            <h2 class="titulo-div">Cartões</h2>
+
+            <label for="numeroCartao">Numero do cartão</label>
+            <input id="numeroCartao" type="number"><br>
+
+            <label for="nomeTitular">Nome do Titular</label>
+            <input type="text" name="nomeTitular" id="nameTitular"><br>
+
+            <label for="validade">Validade</label>
+            <input id="validade" type="number"><br>
+
+            <label for="codSeguranca">Codigo de Segurança</label>
+            <input type="number" name="codigo" id="codSeguranca">
 
         </div>
 
