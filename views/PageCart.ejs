@@ -3,4 +3,91 @@
     <div class="page-title">
         <h1><%= titulo %></h1> 
     </div>
+
+    <main id="container">
+        <div class="pagination">
+            <a href="/">Home > </a>
+            <a href="/cardapios">Cardápio > </a>
+            <p>Carrinho</p> 
+
+        </div>
+        <nav id="content">
+            <div id="content-wrap">
+                <div id="wrap-img">
+                    <img src="/img/Yakissoba.png" alt="">
+
+                    <div id="direction">
+                        <p>Yakisoba clássico grande - aprox 990g, Brocolis, frango , carne, cenoura, macarrão...</p>
+                        <hr>
+                        <span>R$ 45,00</span>
+                    </div>
+                </div>
+                <div id="wrap-img">
+                    <img src="/img/Hot.png" alt="">
+                    <div id="direction">
+                        <p>Hot Roll Aprox - 200gr - Arroz, Salmão, Nori, creme chesee, cebolinha...</p>
+                        <hr>
+                        <span>R$ 45,00</span>
+                    </div>
+                </div>
+                <div id="wrap-img">
+                    
+                    <img src="/img/Frango Xadrez.png" alt="">
+                    <div id="direction">
+                        <p>Frango xadrez com arroz yakameshi - 700gr cebola, pimentão, frango em cubo...</p>
+                        <hr>
+                        <span>R$ 45,00</span>
+                    </div>
+                </div>
+
+                <div id="card-add">
+                    <h1>Itens Adicionais</h1>
+
+                    <div id="align-cards">
+                        <div id="wrap-card">
+                            <img src="/img/Mitsuwa.png" alt="">
+                            <span> + </span>
+                        </div>
+                        <div id="wrap-card">
+                            <img src="/img/Coca -Cola.png" alt="">
+                            <span> + </span>
+                        </div>
+                        <div id="wrap-card">
+                            <img src="/img/Pepino fresco.png" alt="">
+                            <span> + </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="wrap-info">
+                <h2>Meu pedido</h2>
+                    <div id="align-text">
+                        <p>Yakisoba clássico - Tamanho G</p>
+                        <span><input type="number" name="" id=""> R$ 45,00</span>
+                        <hr>
+                    </div>
+                    <div id="align-text">
+                        <p>Hot Roll - 12 Unidades</p>
+                        <span><input type="number" name="" id=""> R$ 45,00</span>
+                        <hr>
+                    </div>
+                    <div id="align-text">
+                        <p>Frango a Xadrez com Arroz</p>
+                        <span><input type="number" name="" id=""> R$ 45,00</span>
+                        <hr>
+                    </div>
+
+                    <div id="wrap-totals">
+                        <h3>Total</h3>
+                        <span> + entrega R$ 2,00</span>
+                        <p>R$ 122,00</p>
+                    </div>
+
+                <button>Finalizar pedido</button>
+            </div>
+           
+        </nav>
+    </main>
+
+
     <%- include ('./partials/Footer.ejs')  %>

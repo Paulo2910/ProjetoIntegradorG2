@@ -20,16 +20,13 @@ header {
     height: 550px;
     z-index: 10;
     box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.425);
+    overflow: hidden;
 }
-
-
-
 
 nav.container {
     padding: 15px ;
     z-index: 5;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-   
     
 
 }
@@ -37,9 +34,10 @@ nav.container {
 .container ul {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    flex-wrap: wrap;
     margin-left: 50px;
-    margin-right: 200px;
+    margin-right: 150px;
+    gap: 20px;
     
 }
 
@@ -305,7 +303,8 @@ section.card button {
     border-top: 1px solid #c3103d2c;
     display: flex;
     justify-content: center;
-    grid-gap: 150px;
+    align-items: center;
+    gap: 150px;
     flex-wrap: wrap;
     overflow: hidden;
    
@@ -365,74 +364,7 @@ section.card button {
     
 }
 
-footer {
-    background: black;
-}
 
-footer .menu-footer {
-    padding: 20px;
-}
-
-footer ul {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-footer a {
-    font-family: 'Roboto';
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-footer a :hover {
-    color: #C3103C;
-}
-footer li {
-    color: white;
-    list-style: none;
-    margin-left: 50px;
-}
-
-
-
-.logo-footer {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    margin: auto;  
-}
-
-.logo-footer p {
-    color: white;
-    padding-bottom: 30px;
-}
-.logo-footer img {
-    width: 200px;
-    margin: auto;
-    
-}
-
-.rede-sociais {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
-}
-
-footer .rede-sociais img {
-    width: 40px;
-    margin-left: 20px;
-}
-
-footer p {
-    padding: 10px;
-    text-align: center;
-    color: white;
-}
 
 @media screen and (max-width: 720px) {
 
@@ -440,7 +372,18 @@ footer p {
         text-align: center;
         
     }
+
+    .nav-info img {
+        width: 60vh;
+        
+    }
     
+    .container-section {
+        
+        display: none;
+        
+        
+    }
 }
 
 

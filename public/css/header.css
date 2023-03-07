@@ -28,7 +28,7 @@ header {
 .page-title {
     position: absolute;
     z-index: 10;
-    top: 120px;
+    top: 125px;
     left: 0;
     right: 0;
     color: white;
@@ -43,7 +43,7 @@ header {
 
 
 nav.container {
-    padding: 15px ;
+    padding: 1px ;
     z-index: 5;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
      
@@ -55,7 +55,7 @@ nav.container {
     align-items: center;
     flex-wrap: wrap;
     margin-left: 50px;
-    margin-right: 200px;
+    margin-right: 100px;
     
 }
 
@@ -64,8 +64,7 @@ nav.container {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: row;
-    
+    flex-direction: row;  
     
 }
 
@@ -112,7 +111,7 @@ nav img {
 
     .container .break  {
         flex-basis: 100%;
-        margin-left: 35%;
+        margin-left: 20%;
 
     }
 
@@ -121,11 +120,11 @@ nav img {
     }
 
     header {
-        height: 300px;
+        height: 365px;
     }
 
     .page-title {
-         top: 220px ;
+         top: 280px ;
          font-size: 30px;
     }
        

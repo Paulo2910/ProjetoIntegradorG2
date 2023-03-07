@@ -2,13 +2,40 @@ main {
     width: 100%;
 }
 
+
+
 .contain {
+    position: relative;
     display: flex; 
     justify-content:center ; 
     flex-wrap: wrap;
     margin: 50px 15px;
-    grid-gap: 50px;   
+    gap: 50px;   
 
+}
+
+.contain .pagination {
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    left: 10px;
+    
+   
+}
+.contain .pagination a {
+    margin: auto 0;
+    font-family: 'Roboto' !important;
+    
+}
+
+.contain .pagination p {
+
+    font-family: 'Roboto';
+    color: rgb(244, 140, 49);
+}
+
+.pagination a:hover {
+    color: #f26e8f;
 }
 
 .content {
