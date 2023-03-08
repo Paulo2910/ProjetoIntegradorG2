@@ -22,7 +22,7 @@
                 <li><a href="#endereco">Endereço</a></li>
                 <li><a href="#pedidos">Pedidos</a></li>
                 <li><a href="#cartoes">Cartões</a></li>
-                <li><a href="">Sair</a></li>
+                <li><a href="/">Sair</a></li>
             </ul>
         </nav>
 
@@ -38,9 +38,11 @@
                 <input type="date" id="dateOfBirth"><br>
 
                 <label for="gender">Genero</label>
-                <option value="masc" id="masc" class="gender">Masculino</option>
-                <option value="fem" id="fem" class="gender">Feminino</option>
-                <option value="nomBinare" id="nomBinare" class="gender">Não Binario</option>
+                <select name="gender" id="gender">
+                    <option value="masc" class="gender">Masculino</option>
+                    <option value="fem" class="gender">Feminino</option>
+                    <option value="nomBinare" class="gender">Não Binario</option>
+                </select><br>
 
                 <button id="buttonDadosPessoais">Salvar</button>
             </form>
@@ -57,7 +59,7 @@
                 <input id="rua" type="text"><br>
 
                 <label for="numero">N°</label>
-                <input id="numero" type="number"><br>
+                <input id="numero" type="text"><br>
 
                 <label for="bairro">Bairro</label>
                 <input id="bairro" type="text"><br>
@@ -79,16 +81,16 @@
             <h2 class="titulo-div">Cartões</h2>
 
             <label for="numeroCartao">Numero do cartão</label>
-            <input id="numeroCartao" type="number"><br>
+            <input id="numeroCartao" type="text"><br>
 
             <label for="nomeTitular">Nome do Titular</label>
             <input type="text" name="nomeTitular" id="nameTitular"><br>
 
             <label for="validade">Validade</label>
-            <input id="validade" type="number"><br>
+            <input id="validade" type="text"><br>
 
             <label for="codSeguranca">Codigo de Segurança</label>
-            <input type="number" name="codigo" id="codSeguranca">
+            <input type="text" name="codigo" id="codSeguranca">
 
         </div>
 
