@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Inter:wght@400;500;700;900&family=Public+Sans:ital,wght@0,400;0,500;0,900;1,700&family=Raleway:wght@200;500;700&family=Roboto:wght@700&family=Tilt+Neon&family=Tourney:wght@500&display=swap');
 #container {
     width: 100%;
-    padding: 50px;
-    
+    padding: 10px;
     
 }
 
@@ -25,29 +24,7 @@
     
 }
 
-#container .pagination {
-    position: absolute;
-    display: flex;
-    gap: 5px;
-    left: 30px;
-    
-   
-}
-#container .pagination a {
-    margin: auto 0;
-    font-family: 'Roboto' !important;
-    
-}
 
-#container .pagination p {
-
-    font-family: 'Roboto';
-    color: rgb(244, 140, 49);
-}
-
-.pagination a:hover {
-    color: #f26e8f;
-}
 
 #wrap-img {
     display: flex;
