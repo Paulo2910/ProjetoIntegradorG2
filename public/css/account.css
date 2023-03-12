@@ -127,7 +127,7 @@ select{
 }
 
 #endereco{ 
-      
+    display: none;
     width: 700px;
 }
 
@@ -143,6 +143,7 @@ select{
 }
 
 #cartoes{
+    display: none;
     width: 700px;
 }
 
