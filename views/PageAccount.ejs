@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina do Usuario</title>
 </head>
-<body>
+<body class="bodyAccount">
     
     <%-include('./partials/Header.ejs') %>
 
     <main class="pageAccount">
 
         <nav id="nav-account">
-            <img id="profilePicture" src="" alt="foto de perfil">
+            <img id="profilePicture" src="/img/User.png" >
 
-            <h2>Olá, !</h2>
+            <h2 id="saudacao">Olá, Maria!</h2>
 
-            <ul id="accountOption">
-                <li><a href="#dadosPessoais">Dados Pessoais</a></li>
-                <li><a href="#endereco">Endereço</a></li>
-                <li><a href="#pedidos">Pedidos</a></li>
-                <li><a href="#cartoes">Cartões</a></li>
-                <li><a href="/">Sair</a></li>
+            <ul id="accountOption" style="list-style: none">
+                <li id="btn-dados"><a href="#dadosPessoais">Dados Pessoais</a></li>
+                <li id="btn-endereco"><a href="#endereco">Endereço</a></li>
+                <li id="btn-pedidos"><a href="#pedidos">Pedidos</a></li>
+                <li id="btn-cartoes"><a href="#cartoes">Cartões</a></li>
+                <li id="btn-sair"><a href="/">Sair</a></li>
             </ul>
         </nav>
 
@@ -37,14 +37,14 @@
                 <label for="dateOfBirth">Data de Nascimento</label>
                 <input type="date" id="dateOfBirth"><br>
 
-                <label for="gender">Genero</label>
+                <label for="gender">Genero</label><br>
                 <select name="gender" id="gender">
                     <option value="masc" class="gender">Masculino</option>
                     <option value="fem" class="gender">Feminino</option>
                     <option value="nomBinare" class="gender">Não Binario</option>
                 </select><br>
 
-                <button id="buttonDadosPessoais">Salvar</button>
+                <button type="submit" class="btnAccount">Salvar</button>
             </form>
 
         </div>
@@ -55,8 +55,8 @@
 
             <form id="formEndereco" action="">
 
-                <label for="rua">Rua</label>
-                <input id="rua" type="text"><br>
+                <label for="Logradouro">Logradouro</label>
+                <input id="logradouro" type="text"><br>
 
                 <label for="numero">N°</label>
                 <input id="numero" type="text"><br>
@@ -70,7 +70,7 @@
                 <label for="cep">CEP</label>
                 <input id="cep" type="number"><br>
 
-                <button id="buttonEndereco" >Atualizar Endereço</button>
+                <button type="submit" class="btnAccount" >Atualizar Endereço</button>
 
             </form>
 
@@ -80,17 +80,24 @@
 
             <h2 class="titulo-div">Cartões</h2>
 
-            <label for="numeroCartao">Numero do cartão</label>
-            <input id="numeroCartao" type="text"><br>
+            <form id="formCartoes" action="">
 
-            <label for="nomeTitular">Nome do Titular</label>
-            <input type="text" name="nomeTitular" id="nameTitular"><br>
+                <label for="numeroCartao">Numero do cartão</label>
+                <input id="numeroCartao" type="text"><br>
 
-            <label for="validade">Validade</label>
-            <input id="validade" type="text"><br>
+                <label for="nomeTitular">Nome do Titular</label>
+                <input type="text" name="nomeTitular" id="nameTitular"><br>
 
-            <label for="codSeguranca">Codigo de Segurança</label>
-            <input type="text" name="codigo" id="codSeguranca">
+                <label for="validade">Validade</label>
+                <input id="validade" type="text"><br>
+
+                <label for="codSeguranca">Codigo de Segurança</label>
+                <input type="text" name="codigo" id="codSeguranca"><br>
+
+                <button type="submit" class="btnAccount">Salvar</button>
+            
+            </form>
+
 
         </div>
 
