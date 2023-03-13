@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina do Usuario</title>
+    <script src="/js/main.js" defer></script>
 </head>
 <body class="bodyAccount">
     
@@ -18,10 +19,10 @@
             <h2 id="saudacao">Olá, Maria!</h2>
 
             <ul id="accountOption" style="list-style: none">
-                <li id="btn-dados"><a href="#dadosPessoais">Dados Pessoais</a></li>
-                <li id="btn-endereco"><a href="#endereco">Endereço</a></li>
-                <li id="btn-pedidos"><a href="#pedidos">Pedidos</a></li>
-                <li id="btn-cartoes"><a href="#cartoes">Cartões</a></li>
+                <li id="btn-dados">Dados Pessoais</li>
+                <li id="btn-endereco">Endereço</li>
+                <li id="btn-pedidos">Pedidos</li>
+                <li id="btn-cartoes">Cartões</li>
                 <li id="btn-sair"><a href="/">Sair</a></li>
             </ul>
         </nav>
@@ -37,7 +38,7 @@
                 <label for="dateOfBirth">Data de Nascimento</label>
                 <input type="date" id="dateOfBirth"><br>
 
-                <label for="gender">Genero</label><br>
+                <label for="gender">Genero</label>
                 <select name="gender" id="gender">
                     <option value="masc" class="gender">Masculino</option>
                     <option value="fem" class="gender">Feminino</option>
