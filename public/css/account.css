@@ -121,8 +121,6 @@ nav ul li a{
     padding: 7px;
     border-radius: 15px;
     border: none;
-    display: flex;
-    margin-left: 250px;
 }
 
 input{
