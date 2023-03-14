@@ -7,7 +7,7 @@ window.addEventListener('load', function(){
 
     let dadosPessoais = document.querySelector('#dadosPessoais');
     let endereco = document.querySelector('#endereco');
-    let pedidos = document.querySelector('#endereco');
+    let pedidos = document.querySelector('#pedidos');
     let cartoes = document.querySelector('#cartoes');
 
     function sumir (){
