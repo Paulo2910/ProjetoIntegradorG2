@@ -10,120 +10,144 @@
 <body class="bodyAccount">
     
     <%-include('./partials/Header.ejs') %>
+    <div class="page-title">
+        <h1><%= titulo %></h1> 
+    </div>
+
+    <div class="contain">
+        <div class="pagination">
+            <a href="/">Home > </a>
+            <a href="/cardapios">Cardápio > </a>
+            <p>Carrinho</p> 
+
+        </div>
+    </div>
 
     <main class="pageAccount">
+            <div class="align-content">
 
-        <nav id="nav-account">
-            <img id="profilePicture" src="/img/User.png" >
+                <nav id="nav-account">
+                    <img id="profilePicture" src="/img/User.png" >
 
-            <h2 id="saudacao">Olá, Maria!</h2>
+                    <h2 id="saudacao">Olá, Maria!</h2>
 
-            <ul id="accountOption" style="list-style: none">
-                <li class="nav" id="btn-dados">Dados Pessoais</li>
-                <li class="nav" id="btn-endereco">Endereço</li>
-                <li class="nav" id="btn-pedidos">Pedidos</li>
-                <li class="nav" id="btn-cartoes">Cartões</li>
-                <li class="nav" id="btn-sair"><a href="/">Sair</a></li>
-            </ul>
-        </nav>
-
-        <div id="dadosPessoais">
+                    <ul id="accountOption" style="list-style: none">
+                        <li class="nav" id="btn-dados">Dados Pessoais</li>
+                        <li class="nav" id="btn-endereco">Endereço</li>
+                        <li class="nav" id="btn-pedidos">Pedidos</li>
+                        <li class="nav" id="btn-cartoes">Cartões</li>
+                        <li class="nav" id="btn-sair"><a href="/">Sair</a></li>
+                    </ul>
+                </nav>
             
-            <h2 class="titulo-div">Dados Pessoais</h2><br>
-            
-            <form id="userData" action="">
-                
-                <div class="dados">
-                    <label for="name">Nome</label><br>
-                    <input type="text" id="name"><br>
 
-                    <label for="sobrenome">Sobrenome</label><br>
-                    <input type="text" id="sobrenome"><br>
 
-                    <label for="email">E-mail</label><br>
-                    <input type="email" id="email"><br>
+            <div id="dadosPessoais">
+                    <h2 class="titulo-div">Dados Pessoais</h2>
+                <div class="align-inputs">                
+                    <form id="userData" action="">
+                        <div class="dados">
+
+                                <div class="align-label">
+                                    <label for="name" class="orderOne">Nome</label>
+                                    <label for="sobrenome" class="orderTwo">Sobrenome</label>
+                                </div>
+
+                                <div class="align">
+                                    <input type="text" id="name"> 
+                                    <input type="text" id="sobrenome">
+                                </div>
+                            
+                                <div class="align-email">
+                                    <label for="email">E-mail</label><br>
+                                    <input type="email" id="email">
+                                </div>
+                                
+                                <div class="align-label">
+                                    <label for="cpf">CPF</label>
+                                    <label for="gender" class="genderOne">Genero</label>
+                                </div>
+
+                                <div class="align">
+                                    <input type="text" id="cpf">
+                                    <select name="gender" id="gender">
+                                        <option value="masc" class="gender">Masculino</option>
+                                        <option value="fem" class="gender">Feminino</option>
+                                        <option value="nomBinare" class="gender">Não Binario</option>
+                                    </select>
+                                </div>
+
+
+                                <div class="align-label" >
+                                    <label for="telefone">Telefone</label>
+                                    <label for="dataDeNascimento" class="dateOne">Data de Nascimento</label>
+                                </div>
+                                <div class="align">
+                                    <input type="text" id="telefone">
+                                    <input type="date" id="dataDeNascimento">
+                                </div>
+                        </div>
+
+                    </form>
                 </div>
-                
+                            <button type="submit" class="btnAccount">Salvar</button>
 
-                <div class="dados">
-                    <label for="telefone">Telefone</label><br>
-                    <input type="text" id="telefone"><br>
+                </div>
+                        <div id="endereco">
 
-                    <label for="cpf">CPF</label><br>
-                    <input type="text" id="cpf"><br>
+                            <h2 class="titulo-div">Endereço</h2>
 
-                    <label for="dataDeNascimento">Data de Nascimento</label><br>
-                    <input type="date" id="dataDeNascimento"><br>
+                            <form id="formEndereco" action="">
 
-                    <label for="gender">Genero</label><br>
-                    <select name="gender" id="gender">
-                        <option value="masc" class="gender">Masculino</option>
-                        <option value="fem" class="gender">Feminino</option>
-                        <option value="nomBinare" class="gender">Não Binario</option>
-                    </select><br>
+                                <label for="Logradouro">Logradouro</label>
+                                <input id="logradouro" type="text"><br>
+
+                                <label for="numero">N°</label>
+                                <input id="numero" type="text"><br>
+
+                                <label for="bairro">Bairro</label>
+                                <input id="bairro" type="text"><br>
+
+                                <label for="cidade">Cidade</label>
+                                <input id="cidade" type="text"><br>
+
+                                <label for="cep">CEP</label>
+                                <input id="cep" type="number"><br>
+
+                                <button type="submit" class="btnAccount" >Atualizar Endereço</button>
+
+                            </form>
+
+                        </div>
+
+                <div id="pedidos">
+                    <h2 class="titulo-div">Pedidos</h2>
                 </div>
 
-            </form>
-                    <button type="submit" class="btnAccount">Salvar</button>
+                    <div id="cartoes">
 
+                        <h2 class="titulo-div">Cartões</h2>
+
+                        <form id="formCartoes" action="">
+
+                            <label for="numeroCartao">Numero do cartão</label>
+                            <input id="numeroCartao" type="text"><br>
+
+                            <label for="nomeTitular">Nome do Titular</label>
+                            <input type="text" name="nomeTitular" id="nameTitular"><br>
+
+                            <label for="validade">Validade</label>
+                            <input id="validade" type="text"><br>
+
+                            <label for="codSeguranca">Codigo de Segurança</label>
+                            <input type="text" name="codigo" id="codSeguranca"><br>
+
+                            <button type="submit" class="btnAccount">Salvar</button>
+                        
+                        </form>
+                    </div>
+            </div>
         </div>
-
-        <div id="endereco">
-
-            <h2 class="titulo-div">Endereço</h2>
-
-            <form id="formEndereco" action="">
-
-                <label for="Logradouro">Logradouro</label>
-                <input id="logradouro" type="text"><br>
-
-                <label for="numero">N°</label>
-                <input id="numero" type="text"><br>
-
-                <label for="bairro">Bairro</label>
-                <input id="bairro" type="text"><br>
-
-                <label for="cidade">Cidade</label>
-                <input id="cidade" type="text"><br>
-
-                <label for="cep">CEP</label>
-                <input id="cep" type="number"><br>
-
-                <button type="submit" class="btnAccount" >Atualizar Endereço</button>
-
-            </form>
-
-        </div>
-
-        <div id="pedidos">
-            <h2 class="titulo-div">Pedidos</h2>
-        </div>
-
-        <div id="cartoes">
-
-            <h2 class="titulo-div">Cartões</h2>
-
-            <form id="formCartoes" action="">
-
-                <label for="numeroCartao">Numero do cartão</label>
-                <input id="numeroCartao" type="text"><br>
-
-                <label for="nomeTitular">Nome do Titular</label>
-                <input type="text" name="nomeTitular" id="nameTitular"><br>
-
-                <label for="validade">Validade</label>
-                <input id="validade" type="text"><br>
-
-                <label for="codSeguranca">Codigo de Segurança</label>
-                <input type="text" name="codigo" id="codSeguranca"><br>
-
-                <button type="submit" class="btnAccount">Salvar</button>
-            
-            </form>
-
-
-        </div>
-
     </main>
 
 

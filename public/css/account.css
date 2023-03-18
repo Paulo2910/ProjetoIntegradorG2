@@ -1,18 +1,39 @@
 .bodyAccount{
     background-color: #C3103C;
+   
 }
 
-.pageAccount{
-    width: 1000px;
-    height: 500px;
+.pageAccount {
+  
     display: flex;
-    margin: 10%;
-    padding: 5%;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+
+    width: 80%;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
     background-color: #fff;
     font-family: 'roboto';
-    margin-left: 250px;
+    margin: 1px auto;
+   
+}
+
+
+
+.align-content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    overflow: hidden;
+
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
+    
+
 }
 
 #profilePicture{
@@ -25,18 +46,19 @@
 }
 
 #nav-account{
-    padding: 70px;
-    height: 460px;
-    width: 300px;
-    padding-top: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: -50px;
-    margin-right: 30px;
+    align-items: center;
+
+    padding: 50px;
+    
     box-shadow: 2px 2px 2px 2px rgba(55, 54, 54, 0.396); 
     border-radius: 15px;
-    margin-left: -50px;
+   
+}
+
+#nav-account ul {
+    width: 12em;
 }
 
 #saudacao{
@@ -46,11 +68,18 @@
 nav ul li a{
     text-decoration: none;
     color: #C3103C;
+    
 }
+
 
 .nav{
     text-decoration: none;
     color: #C3103C;
+    cursor: pointer;
+}
+
+.nav:hover {
+    color: #d496a5;
 }
 
 #btn-dados{
@@ -95,37 +124,121 @@ nav ul li a{
 }
 
 .titulo-div{
-    padding: 15px;
-    border-bottom: 2px solid grey;
+    border-bottom: 1px solid grey;
     color: black;
+    width: 83%;
+    text-transform: uppercase;
 }
+
 
 #dadosPessoais{
-    display: block;
-    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    flex-wrap: nowrap;
+    gap: 20px;
+    
+    width: 100%;
+}
+.align-inputs {
+    width: 100%;
+   
 }
 
-#userData{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    width: 500px;
-    margin-left: 50px;
-    margin-top: 20px; 
-    height: 250px;
-    align-items: center;
+.align-inputs input {
+    flex-wrap: nowrap;
+    width: 100%;
 }
+
+.align {
+    width: 100%;
+   
+}
+
+.align-email {
+    width: 92%;
+}
+.align-inputs #email {
+    width: 90%;
+    margin-bottom: 20px;
+}
+.align-inputs #name {
+    width: 40%;
+    margin-bottom: 20px;
+}
+.align-inputs #sobrenome {
+    margin-left: 20px;
+    width: 40%;
+    margin-bottom: 20px;
+}
+.align-inputs #cpf {
+    width: 40%;
+    margin-bottom: 20px;
+    
+}
+.align-inputs #telefone {
+    width: 40%;
+    margin-bottom: 20px;
+    
+}
+.align-inputs #dataDeNascimento {
+    width: 40%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.align-inputs .dateOne {
+    margin-left: -20px;
+}
+.align-inputs #gender {
+    width: 40%;
+    margin-left: 20px;
+    padding: 5px;
+    margin-bottom: 20px;
+    
+}
+
+.align-inputs .genderOne {
+    margin-left: 15px;
+}
+
+.align-label {
+    display: flex;
+    gap: 265px;
+    
+}
+
+
+.dados{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   align-items: center;
+   width: 100%;
+}
+    
+
+
 
 .btnAccount{
-    background-color: rgba(248, 226, 111, 1);
-    padding: 7px;
-    border-radius: 15px;
+    background-color: #C3103C;
+    width: 250px;
+    margin: 10px auto;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
     border: none;
+    text-transform: uppercase;
+    
 }
 
 input{
-    border-radius: 5px;
+    border-radius: 3px;
+    padding: 5px;
     border: 1px solid black;
+    width: 100%;
 }
 
 select{
@@ -168,4 +281,20 @@ select{
     height: 250px;
     justify-content: space-between;
     margin-top: 20px;
+}
+
+
+@media (max-width: 720px) {
+    .align-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .align-label {
+        gap: 152px;
+    }
+
+    .align-email {
+        width: 97%;
+    }
 }

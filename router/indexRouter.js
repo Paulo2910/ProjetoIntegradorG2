@@ -8,8 +8,6 @@ const cartController = require('../controllers/cartController');
 const chekoutController = require('../controllers/checkoutController')
 const accountController = require('../controllers/accountController');
 
-
-
 router.get('/', indexController.index);
 router.get('/cardapios', cardapioController.menu);
 router.get('/produto', produtosController.product);

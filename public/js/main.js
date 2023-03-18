@@ -20,22 +20,22 @@ window.addEventListener('load', function(){
 
     btnEndereco.addEventListener('click', function(){
         sumir();
-        endereco.style.display ='block';
+        endereco.style.display ='flex';
     })
 
     btnDadosPessoais.addEventListener('click', function(){
         sumir();
-        dadosPessoais.style.display ='block';
+        dadosPessoais.style.display ='flex';
     })
 
     btnPedidos.addEventListener('click', function(){
         sumir();
-        pedidos.style.display = 'block'
+        pedidos.style.display = 'flex'
     })
 
     btnCartoes.addEventListener('click', function(){
         sumir();
-        cartoes.style.display = 'block'
+        cartoes.style.display = 'flex'
     })
 
 
