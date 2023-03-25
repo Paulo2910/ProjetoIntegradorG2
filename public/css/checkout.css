@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Inter:wght@400;500;700;900&family=Public+Sans:ital,wght@0,400;0,500;0,900;1,700&family=Raleway:wght@200;500;700&family=Roboto:wght@100;300;700&family=Tilt+Neon&family=Tourney:wght@500&display=swap');
+.container-checkout {
+    width: 100%;
+    overflow: hidden;
+    background-image: url('/img/FundoPratoWhite.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin-top: 1px;
+    margin-bottom: -150px;
+}
+
+.container-checkout  main {
+    width: 90%;
+    margin: 60px;
+    background-color: white;
+    
+    padding: 50px;
+    box-shadow: -6px 2px 10px 2px rgba(0, 0, 0, 0.47);
+    border-radius: 10px ;
+
+    
+}
+
+.container-checkout h2 {
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    margin-bottom: 20px;
+
+}
+
+.container-checkout label {
+    text-transform: uppercase;
+    color: #302D2D;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.container-checkout input {
+    width: 90%;
+    height: 45px;
+    margin-bottom:  20px;
+    padding: 20px;
+
+    background-color: #D9D9D9;
+    border: none;
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 100;
+}
+
+#cpf, #num ,#cep{
+    width: 40%;
+}
+
+.container-checkout p {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    color: black;
+    font-weight: 300;
+    margin-bottom: 30px;
+
+}
+
+
+.coluna-100 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.coluna-50{
+    width: 50%;
+}
+
+.coluna-70 {
+    width: 70%;
+}
+
+.cards-credit {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.card-credit {
+    display: flex;   
+    gap: 4px;
+   
+    
+}
+
+
+.card-credit li {
+        text-transform: capitalize;
+        
+        padding: 10px 20px 0 20px;
+        text-decoration: none;
+        font-size: 100%;
+        font-family: 'Roboto';
+        font-weight: bold;
+        padding-bottom: 10px;
+
+        border-top: 2px solid #EF1818;
+        border-left: 2px solid #EF1818;
+        border-right: 2px solid #EF1818;
+        border-radius: 10px 10px 0 0;
+        color: black;
+
+        list-style: none;
+        cursor: pointer;
+    }   
+
+.credit {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+#portador , #credito {
+    width: 70%;
+    font-size: 20px;
+    
+}
+
+#validade, #seguranca {
+    width: 30%;
+    font-size: 20px;
+
+}
+
+.btn {
+    text-align: center;
+    }
+
+.btn button {
+    padding: 15px;
+    width: 250px;
+    margin-top: 30px;
+    
+
+    border: none ;
+    border-radius: 5px;
+    font-size: 20px;
+
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    background-color: #C3103C;
+}
+
+.debit {
+    margin-top: 50px;
+    margin-left: -25px;
+
+}
+
+.tag-info {
+   margin-top: 10px;
+   margin-left: 30px;
+   font-family: 'Roboto' !important;
+   text-transform: capitalize !important;
+   font-size: 15px !important;
+   
+}
+
+.tag-p, span{
+    margin-left: 20px;
+    font-size: 12px !important;
+    text-transform: capitalize !important;
+}
+
+.align-banks {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.img-icon img{
+    margin-top: -30px;
+    margin-left: 12px;
+    width: 100px;
+}
+.nubank img {
+    width: 60px;
+}
+
+.bradesco img {
+    width: 110px;
+}
+
+.pix {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: -130px;
+    
+}
+
+.isTagP {
+    margin-left: -105px;
+}
+
+.pix img {
+    width: 40px;
+    margin-left: 10px;
+    
+}
+
+
+@media (max-width: 720px) {
+   .container-checkout main {
+        width: 80%;
+    }
+
+    .coluna-50 {
+        width: 100%;
+    }
+
+    #cpf, #num ,#cep{
+        width: 90%;
+    }
+
+    .card-credit li {
+        font-size: 60%;
+    }
+
+    #validade, #seguranca {
+        width: 50%;
+    
+    }
+
+    
+}
+

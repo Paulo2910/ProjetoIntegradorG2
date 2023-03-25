@@ -1,7 +1,141 @@
-<%- include ('./partials/Header.ejs') %>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/checkout.css">
+    <title>Finalização do Pedido</title>
+</head>
 
 
 
 
+<body>
+    <%- include ('./partials/Header.ejs') %>
+
+<div class="page-title">
+    <h1><%= titulo %></h1> 
+</div>
+
+
+<div class="container-checkout">
+    <main>
+        <h2>Detalhes do Faturamento</h2>
+
+        <form action="">
+            <div class="coluna-100">
+                <div class="coluna-50">                
+                    <label for="">Nome Completo *</label><br>
+                    <input type="text" name="" id="name"><br>
+
+                    <label for="">Cpf *</label><br>
+                    <input type="text" name="" id="cpf" placeholder=" 000.000.000 - 00"><br>
+
+                    <label for="">CEP *</label><br>
+                    <input type="text" name="" id="cep" placeholder=" 00.000 - 000"><br>
+
+                    <label for="">Endereço *</label><br>
+                    <input type="text" name="" id="end"><br>
+
+                    <label for="">Numero *</label><br>
+                    <input type="text" name="" id="num"><br>
+
+                    <label for="">Complemento</label><br>
+                    <input type="text" name="" id="compl" placeholder="Apto, Suite, Sala e etc..."><br>
+                </div>
+
+                <div class="coluna-50">
+                    <label for="">Bairro *</label><br>
+                    <input type="text" name="" id=""><br>
+
+                    <label for="">Celular *</label><br>
+                    <input type="text" name="" id="" placeholder=" ( ) 0000 - 0000"><br>
+
+                    <p>entrega somente na região de são paulo capital.</p>
+
+                    <h2>Detalhes do Pedido</h2>
+
+                </div>
+            </div>
+            <hr>
+
+            <div class="cards-credit">
+                <div class="card-credit">
+                    <div>
+                        <li class="tag-card"> Cartão de Crédito</li>
+                    </div>
+                    <div>
+                        <li class="tag-debit"> debito Online</li>
+                    </div>
+                    <div>
+                        <li class="tag-pix"> Pix</li>
+                    </div>
+                </div>
+                <div class="credit coluna-100" >
+                    <div class="coluna-50">
+                        <label for="">Nome do Portador</label><br>
+                        <input type="text" id="portador"><br>
+
+                        <label for="" >Numero do Cartão</label><br>
+                        <input type="text" id="credito" placeholder=".... .... .... ....">
+                    </div>
+
+                    <div class="coluna-50">
+                        <label for="">Validade</label><br>
+                        <input type="text" id="validade" placeholder="MM/AA"><br>
+
+                        <label for="">Código de Segurança</label><br>
+                        <input type="text" id="seguranca" placeholder="CVV">
+                    </div>
+                </div>
+
+                <div class="debit coluna-100" >
+                    <div class="">
+                        <p class="tag-info"> Selecione o seu Banco abaixo. </p>
+                        <div class="align-banks">
+                            <div class="img-icon bb">
+                                <a href=""><img src="/img/BB.png" alt=""></a>
+                            </div>
+                            <div class="img-icon bradesco">
+                                <a href=""><img src="/img/Bradesco.png" alt=""></a>
+                            </div>
+                            <div class="img-icon nubank">
+                                <a href=""><img src="/img/Nubank.png" alt=""></a>
+                            </div>
+                        </div>
+                        <p class="tag-p">* Após clicar em<span>"Realizar pagamento " </span>  você recebera acesso ao link que levara para o seu banco, 
+                            assim é possível realizar o pagamento em total seguranca.</p>
+                    </div>
+                    <div class="coluna-50"></div>
+                </div>
+            </div>
+
+            <div class="pix coluna-100" >
+                <div class="align-icons">
+                    <div class="align-banks">
+                        <div class="img-icon pix">
+                            <p class="tag-info"> Faça um Pix. </p>
+                            <a href=""><img src="/img/Pix.png" alt=""></a>
+                            
+                        </div>
+                    </div>
+                    <p class="tag-p isTagP">* Ao finalizar a compra, iremos gerar o código Pix para pagamento na próxima tela e disponibilizar 
+                        um número WhatsApp para você compartilhar o seu comprovante.</p>
+                </div>
+                <div class="coluna-50"></div>
+            </div>
+            <div class="btn">
+                <button>Realizar Pagamento</button>
+            </div>
+        </div>
+
+            
+        </form>
+    </main>
+</div>
+</body>
 
 <%- include ('./partials/Footer.ejs')  %>
+
+<script src="/js/chekout.js"></script>

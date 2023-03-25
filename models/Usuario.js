@@ -19,7 +19,7 @@ module.exports = (sequelize, DataType) => {
         pass: DataType.STRING
         
     }, {
-        tableName: 'usuario',
+        tableName: 'Usuario',
         timestamps: false
     })
 

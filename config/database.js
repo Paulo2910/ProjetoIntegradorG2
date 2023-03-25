@@ -1,11 +1,13 @@
-
-const config = {
+module.exports = {
+    host: 'localhost',
+    port: '3306',
+    database: 'db_dimsum',
     username: 'root',
     password:  'N.3g]rxh1DK3K7Oq',
-    database: 'db_dimsum',
-    host: 'localhost',
     dialect: 'mysql'
 }
 
+    
 
-module.exports = config
+
+
