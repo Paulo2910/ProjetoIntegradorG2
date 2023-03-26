@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/checkout.css">
+    <title>Compra Efetuada</title>
+</head>
+<body>
+    <%- include ('./partials/Header.ejs')%>
+
+    <div class="page-title">
+        <h1><%= titulo %></h1> 
+    </div> 
+
+
+    <div class="container-checkout">
+        <main>
+            <div class="align-sucess">
+            <h2>Pedido Efetuado com Sucesso</h2>
+                <p>Olá ... seu pedido foi efetuado com sucesso. O restaurante já estar
+                    preparando o seu pedido, você será notificado por e-mail quando 
+                    o seu pedido sair para  entrega.</p>
+
+                    <h3>Informação do pedido</h3>
+
+                    <ul>
+                        <li>Pedido: 122</li>
+                        <li>Total: R$ 150,00</li>
+                        <li>Forma de Pagamento: R$ Cartão de Credito</li>
+                    </ul>
+
+                    <p class="tagP">OBS:  seu pedido tem um limite de envio  de 1hr.</p>
+            </div>
+        </main>
+    </div>
+    
+    
+    
+    
+    <%- include ('./partials/Footer.ejs')%>
+</body>
+</html>

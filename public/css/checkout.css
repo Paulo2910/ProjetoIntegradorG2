@@ -210,6 +210,114 @@
 }
 
 
+.align-sucess h2 {
+    text-align: center;
+    color: rgba(234,32,81, 0.6);
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.align-sucess p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.align-sucess h3 {
+    color: #EA2051;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    font-family: 'Roboto';
+    color: black;
+    
+}
+
+li {
+    
+    font-weight: 300 !important;
+}
+
+.tagP {
+    text-align: left !important;
+    margin-top: 20px;
+    font-weight: 300 !important;
+    font-size: 20px !important;
+}
+
+.pagination {
+    margin-top: -30px;
+}
+ .pagination a {
+    color: white !important;
+    font-weight: 600;
+}
+
+.pagination a:hover {
+    color: #C3103C !important;
+}
+
+.pagination p {
+    font-family: 'Roboto' !important;
+    font-weight: 600;
+    font-size: 15px;
+    color: #302d2dc2 !important;
+    text-transform: capitalize;
+    padding-top: 31px;
+    
+}
+
+.container-details {
+     display: flex;
+     justify-content: left;
+     width: 80%;
+     background: white;
+     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+     border-radius: 10px;
+     padding: 10px;
+     margin-bottom: 20px;
+}
+.container-details img {
+    margin: 20px;
+    width: 150px;
+    border-radius: 20px;
+   
+}
+
+.content-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 10%;
+    
+}
+
+.content-wrap span {
+    font-size: 20px !important;
+    line-height: 30px;
+    margin-left: 0;
+    color: #C3103C;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+.tag-totals {
+    font-weight: bold !important; 
+    font-size: 30px !important; 
+    margin-left: 30% !important;
+}
+
+
+
+
 @media (max-width: 720px) {
    .container-checkout main {
         width: 80%;
@@ -231,6 +339,26 @@
         width: 50%;
     
     }
+
+    .pix {
+        margin-left: -05px;
+    }
+
+    .isTagP {
+        margin-left: 5px;
+    }
+
+    .content-wrap {
+        line-height: 30px;
+    }
+
+    .tag-totals {
+        font-size: 30px !important;
+        margin-left: 0 !important;
+        margin-top: 10px !important;
+    }
+
+   
 
     
 }
