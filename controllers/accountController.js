@@ -1,7 +1,7 @@
 const accountController = {
     account: (req, res) => {
         res.render('PageAccount',{
-            titulo: 'Usuário'
+            titulo: 'Pagina do Usuário'
         })
     }
 };
