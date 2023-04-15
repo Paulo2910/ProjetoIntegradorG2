@@ -1,9 +1,9 @@
 <body> 
    
-        <%- include ("./partials/Header.ejs") %> <!--Metodo de Chamada do Header Dinamico-->
+       <%- include ("./partials/Header.ejs") %> <!--Metodo de Chamada do Header Dinamico-->
 
         <div class="page-title">
-            <h1><%= titulo %></h1> 
+            <h1></h1> 
         </div> 
      
    <main>
@@ -13,24 +13,25 @@
             <p>Cardápio</p> 
 
         </div>
-        <nav class="content">
-            <div class="cards">
-                <section class="card">
-                    <div class="icon">
-                        <img src="/img/FrangoGonBao.jpg" alt="">
-                    </div>
-                    <div class="back-title">   
-                        <h3>Frango Gon Bao</h3>
-                        <p>No gong  bao, o amendoin  e o frango  são os principais ingredientes, 
-                            sendo aromatizados pelos sabores marcantes. Leve, moderado e adocicado</p>
-                        <span>R$ 35,99</span><br>
-                        <button>Pedir este prato</button>
-                    </div>
-                </section>
-            </div>
-        </nav>
+        <%dishs.forEach(el => { %>
+            <nav class="content">
+                <div class="cards">
+                    <section class="card">
+                        <div class="icon">
+                            <img src="<%= el.url %>" alt="">
+                        </div>
+                        <div class="back-title">   
+                            <h3><%= el.dish %></h3>
+                            <p><%= el.info %></p>
+                            <span>R$ <%= el.price %>,99</span><br>
+                            <button>Pedir este prato</button>
+                        </div>
+                    </section>
+                </div>
+            </nav>
+        <% }); %>
 
-        <nav class="content">
+       <!-- <nav class="content">
             <div class="cards">
                 <section class="card">
                     <div class="icon">
@@ -117,7 +118,7 @@
                     </div>
                 </section>
             </div>
-        </nav>
+        </nav>-->
     </div>
    </main>
 

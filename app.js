@@ -5,14 +5,17 @@ const path = require("path")
 const app = express(); // Guarda a execução do express.
 const PORT = process.env.PORT || 3000;
 const indexRouter = require('./router/indexRouter');
-//const users = require('./router/users');
+const users = require('./router/users');
+const menu = require('./router/menu');
+require('./database'); // Nova configuração
 
 app.use(express.json());
 app.use(express.urlencoded());
 
 // Importar as rotas
 app.use('/', indexRouter);
-//app.use('/', users)
+app.use('/', users)
+app.use('/cardapios', menu)
 
 app.set('view engine', 'ejs');
 app.set('views', './views')

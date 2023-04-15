@@ -10,7 +10,7 @@ const sucessController = require('../controllers/sucessController')
 const accountController = require('../controllers/accountController');
 
 router.get('/', indexController.index);
-router.get('/cardapios', cardapioController.menu);
+//router.get('/cardapios', cardapioController.menu);
 router.get('/produto', produtosController.product);
 router.get('/carrinho', cartController.cart)
 router.get('/finalizacao-pedido', chekoutController.chekout)
