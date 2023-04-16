@@ -1,5 +1,18 @@
-const indexController = {
-    index: (req, res) => res.render('index')
-};
+const Menu = require('../models/Menu')
 
-module.exports = indexController;
+async function index(req,res){
+    var promo = await Menu.findAll(
+        {
+            where: {
+                id: [11,12,13]
+              }
+        }
+    )
+    
+    console.log(promo)
+    res.render('index', {promo})
+}
+
+module.exports = {
+    index
+};

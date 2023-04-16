@@ -52,40 +52,19 @@
             </div>
 
             <div class="cards">
+
+               <% promo.forEach(el => { %>
                 <section class="card">
                     <div class="icon">
-                        <img src="/img/Bolinho de Pato.jpg" alt="">
+                        <img src="<%= el.url %>" alt="">
                     </div>
                     <div class="back-title">   
-                        <h3>Bolinho de Pato</h3>
-                        <p>Massa fina de arroz recheado com pato laqueado desfiado.</p>
+                        <h3><%= el.dish %></h3>
+                        <p><%= el.info.slice(0,-21) %>...</p>
                         <button>Pedir este prato</button>
                     </div>
                 </section>
-
-                <section class="card">                    
-                    <div class="icon">
-                        <img src="/img/Peixe no Vapor.jpg" alt="">
-                    </div>
-                    <div class="back-title"> 
-                        <h3>Peixe no Vapor</h3>
-                        <p>Pargo Rosa Grande, vegetais orgânicos molho de moyashe...</p>
-                        <a href="/produto">
-                        <button>Pedir este prato</button></a>
-                    </div>
-                </section>
-
-                <section class="card">
-
-                    <div class="icon">
-                        <img src="/img/Barriguinha de Porco.jpg" alt="">
-                    </div>
-                    <div class="back-title">
-                        <h3>Barriga de Porco</h3>
-                        <p>Porco agridoce ao molho de feijão moyashe e vegetais org...</p>
-                        <button>Pedir este prato</button>
-                    </div> 
-                </section>
+             <% }) %> 
             </div>
         </div>
     </main>
