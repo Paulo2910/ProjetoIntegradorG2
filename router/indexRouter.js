@@ -13,11 +13,11 @@ const accountController = require('../controllers/accountController');
 
 router.get('/', indexController.index);
 //router.get('/cardapios', cardapioController.menu);
-router.get('/produto', produtosController.product);
+router.get('/produto/:id', produtosController.isProduct);
 router.get('/carrinho', cartController.cart)
 router.get('/finalizacao-pedido', chekoutController.chekout)
 router.get('/compra-efetuada', sucessController.sucess)
-router.get('/usuario', accountController.account);
+router.get('/usuario', accountController.pageUsers);
 
 
 

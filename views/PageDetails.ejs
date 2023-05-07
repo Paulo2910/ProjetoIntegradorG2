@@ -19,37 +19,51 @@
     <main class="detalhes-produto">
         
         <section class="detalhes-img">
-            <img id="imagemPrato" src="/img/Barriguinha de Porco.jpg" alt="">
+            <img id="imagemPrato" src="<%=product.url%>" alt="">
         </section>
 
         <section class="detalhes-descricao">            
             <div class="detalhes-prato">
-                <h1 class="nome-prato"> Barriga de Porco</h1>
-                <p class="descricao-produto"> Porco agridoce ao molho de feijão moyashi e vegetais orgânicos. Este é o prato mais popular do sudeste asiático, consumido em feiras urbanas e também em toda zona rural. A barriga de porco é preparada com os melhores temperos. </p>
-            </div>
-
-            <div class="tamanho">
                 
-                <form action="">
-                    <label for="form"> Tamanho</label><br><br>
-                    <input type="radio" id="pequeno"> Pequena(300 g) 
-                    <input type="radio"> Grande(600 g) <br>
-                </form>
+                    <h1 class="nome-prato"><%= product.dish %></h1>
+              
+                <p class="descricao-produto"> <%=product.info%></p>
             </div>
 
-            <form class="pimenta" action="" method="POST" >
-                    <label for="form"> Pimenta?</label><br><br>
-                    <input type="radio" id="nenhuma-pimenta" name="nenhuma-pimenta" value="nenhuma-pimenta">
-                    <label for="nenhuma-pimenta"> Nenhuma Pimenta</label><br>
-                    <input type="radio" id="pouca-pimenta" name="pouca-pimenta" value="pouca-pimenta">
-                    <label for="pouca-pimenta"> Pouca Pimenta</label><br>
-                    <input type="radio" id="muita-pimenta" name="muita-pimenta" value="muita-pimenta">
-                    <label for="muita-pimenta"> Muita Pimenta</label><br>
-            </form>
+                <div class="align-info">
+                    <div class="tamanho">
+                        <p>Tamanho: </p>
+                        <label for=""><input type="radio" id="pequeno"> Pequena(300 g)</label>
+                        <label for=""><input type="radio"> Grande(600 g)</label>
+                    </div>
+                </div>
+
+                <div class="align-info">
+                    <div class="tamanho">
+                        <p>Selecione a quantidade: </p>
+                        <input type="number" name="" id="">
+                    </div>
+                </div>
+
+                <div class="align-info">
+                    <div class="tamanho">
+                        <p>Pimenta?<p>
+
+                        <input type="radio" id="nenhuma-pimenta" name="nenhuma-pimenta" value="nenhuma-pimenta">
+                        <label for="nenhuma-pimenta"> Nenhuma Pimenta</label>
+
+                        <input type="radio" id="pouca-pimenta" name="pouca-pimenta" value="pouca-pimenta">
+                        <label for="pouca-pimenta"> Pouca Pimenta</label>
+
+                        <input type="radio" id="muita-pimenta" name="muita-pimenta" value="muita-pimenta">
+                        <label for="muita-pimenta"> Muita Pimenta</label>
+                </div>
+                </div>
+            
 
             <div class="preco">
-                <h5 class="valor-final">Valor Final</h5> 
-                <p class="valor">R$ 80,50</p>
+                <h3 class="valor-final">Valor do Prato: </h3> 
+                <p class="valor">R$ <%=product.price%>, 99</p>
             </div>
 
             <button class="adicionar-carrinho" type="submit" >ADICIONAR AO CARRINHO</button>

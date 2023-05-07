@@ -358,6 +358,18 @@ section.card button {
     cursor: pointer;
 }
 
+.back-title a {
+    width: 35%;
+    padding: 12px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background: #F8E26F;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 .container-section img {
     width: 550px;
     height: 400px;

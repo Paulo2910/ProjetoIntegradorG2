@@ -61,7 +61,9 @@
                     <div class="back-title">   
                         <h3><%= el.dish %></h3>
                         <p><%= el.info.slice(0,-21) %>...</p>
-                        <button>Pedir este prato</button>
+
+                        <a href="/produto/<%=el.id%>">Pedir este prato</a>
+                        
                     </div>
                 </section>
              <% }) %> 

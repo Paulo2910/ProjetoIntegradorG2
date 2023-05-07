@@ -32,6 +32,7 @@
     width: 48%;
     margin-top: 20px;
     padding: 0 50px 10px;
+    color: #858585;
 }
 
 .detalhes-prato {
@@ -42,14 +43,51 @@
 
 
 .nome-prato{
+    font-family: 'Tilt Neon';
     color: #C3103C;
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    font-size: 30px;
 }
 
-.tamanho{
+.tamanho {
+    border-top: 1px solid #8585853f;
+    border-bottom: 1px solid #8585853f;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px;
     margin-bottom: 20px;
+    width: 100%;
+    font-size: 90%;
+}
+
+.tamanho p {
+    
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Roboto';
+    
+}
+
+.tamanho input {
+    width: 15px;
+    
+}
+.tamanho label {
+    color: #C3103C;
+}
+
+.tamanho input[type='number'] {
+    width: 50px;
+}
+
+.align-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .pimenta{
@@ -61,6 +99,19 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    
+}
+
+.preco h3 {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Tilt Neon';
+}
+
+.preco p {
+    font-family: 'Tilt Neon';
+    font-size: 40px;
+    font-weight: bold;
+    
 }
 
 .valor{
@@ -75,6 +126,8 @@
 }
 
 
+
+
 @media (max-width: 720px ) {
 
     .detalhes-produto {
@@ -87,5 +140,10 @@
         width: 100%;
         padding: 10px;
 
+    }
+
+    .tamanho label, p {
+        font-size: 12px;
+        
     }
 }

@@ -9,11 +9,13 @@ const indexRouter = require('./router/indexRouter');
 const indexAdm = require('./router/indexAdm');
 const users = require('./router/users');
 const menu = require('./router/menu');
+const logMiddleware = require('./middlewares/authentication')
 require('./database'); // Nova configuração
 
 app.use(express.json());
 app.use(express.urlencoded());
-app.use(methodOverride('_method'))
+app.use(methodOverride('_method'));
+app.use(logMiddleware)
 
 // Importar as rotas
 app.use('/', indexRouter);

@@ -1,10 +1,16 @@
-const produtosController = {
-    product: (req, res ) => { 
-        res.render("PageDetails", {
-            titulo: 'Produto'   
-            
-        })// Fiz uma mudança nesse código deixei dinâmico o nome da página.
-    }
-}
+const Menu = require('../models/Menu')
 
-module.exports = produtosController;
+async function isProduct(req, res){
+    const product = await Menu.findByPk(req.params.id);
+    console.log(product)
+    res.render('PageDetails', {
+        product,
+        titulo: product.dish,
+       
+    })
+}   
+
+
+module.exports = {
+    isProduct
+};
