@@ -11,7 +11,10 @@ async function menu(req, res){
     const dishs = await Menu.findAll()
     console.log(dishs)
 
-    res.render('PageMenu',{dishs})
+    res.render('PageMenu',{
+        dishs,
+        titulo: 'Menu'
+    })
 }
 
 module.exports = {

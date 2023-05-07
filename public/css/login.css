@@ -38,3 +38,26 @@ main button {
     border: none;
     cursor: pointer;
 }
+
+.alert {
+    display: flex;
+}
+.alert ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(220, 15, 15);
+    background-color: rgba(255, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 50%;
+    padding: 20px;
+    
+}
+
+.alert li {
+    color: rgb(192, 61, 5);
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: 'Tilt Neon';
+    font-weight: bold;
+}

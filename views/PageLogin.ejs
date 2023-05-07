@@ -30,8 +30,17 @@
 
         <div>
             <h1>Não Sou cadastrado</h1>
+            <div class="alert">
+                <% if( typeof errors !== 'undefined'){ %>
+                    <ul>
+                        <% for (let error in errors) { %>
+                            <li><%=errors[error].msg %></li>
+                        <% } %>
+                    </ul>
+                <% } %>
+            </div>
             <form action="" method="POST">
-                <input type="text" name="nameComplet" id="" placeholder="Digite seu nome">
+                <input type="text" name="nameComplet"  id="" placeholder="Digite seu nome">
                 <input type="text" name="email" id="" placeholder="Digite seu E-mail">
                 <input type="password" name="isPassword" id="" placeholder="Digite sua senha">
                 <button>Cadastre-se</button>

@@ -3,7 +3,7 @@
        <%- include ("./partials/Header.ejs") %> <!--Metodo de Chamada do Header Dinamico-->
 
         <div class="page-title">
-            <h1></h1> 
+            <h1><%=titulo%></h1> 
         </div> 
      
    <main>
@@ -14,12 +14,15 @@
 
         </div>
         <%dishs.forEach(el => { %>
+
             <nav class="content">
                 <div class="cards">
                     <section class="card">
-                        <div class="icon">
-                            <img src="<%= el.url %>" alt="">
-                        </div>
+                        <a href="/produto/<%=el.id%>">
+                            <div class="icon">
+                                <img src="<%= el.url %>" alt="">
+                            </div>
+                        </a>
                         <div class="back-title">   
                             <h3><%= el.dish %></h3>
                             <p><%= el.info %></p>
