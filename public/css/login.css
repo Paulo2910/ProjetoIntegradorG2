@@ -1,0 +1,40 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin-top: 50px;
+    gap: 50px;
+   
+}
+
+main h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: rgb(36, 35, 28);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+main input {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+main button {
+    padding: 10px;
+    background-color: #24BCF0;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,82 @@
+.align {
+    margin-top: 50px;
+    padding: 10px;
+}
+.container tr{
+   text-transform: uppercase;
+}
+
+.container thead{
+    background: #C3103C;
+    color: white;
+}
+
+.table {
+    margin: 0 auto;
+    width: 60% !important;
+    
+}
+
+.container-inp {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+.container-inp label {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.container-inp input {
+    width: 600px;
+}
+
+.link a {
+    position: absolute;
+    padding: 10px;
+    border: none;
+    width: 250px;
+    background-color: #C3103C;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.align button {
+    padding: 10px;
+    border: none;
+    width: 250px;
+    margin: 0 40%;
+    background-color: #C3103C;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+
+}
+
+
+@media (max-width: 720px) {
+    .container-inp input {
+        width: 300px;
+    }
+
+    .align {
+        margin-top: 80px;
+    }
+
+    .link a {
+        top: 60%;
+        left: 25%;
+    }
+}
+

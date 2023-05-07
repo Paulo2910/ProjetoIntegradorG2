@@ -5,6 +5,7 @@ const path = require("path")
 const app = express(); // Guarda a execução do express.
 const PORT = process.env.PORT || 3000;
 const indexRouter = require('./router/indexRouter');
+const indexAdm = require('./router/indexAdm');
 const users = require('./router/users');
 const menu = require('./router/menu');
 require('./database'); // Nova configuração
@@ -14,6 +15,7 @@ app.use(express.urlencoded());
 
 // Importar as rotas
 app.use('/', indexRouter);
+app.use('/administrador', indexAdm);
 app.use('/', users)
 app.use('/cardapios', menu)
 
