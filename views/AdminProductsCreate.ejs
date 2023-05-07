@@ -13,27 +13,36 @@
     <%- include ('./partials/Header.ejs') %>
 
     <div class="page-title">
-        <h1></h1> 
+        <h1><%=titulo%></h1> 
+    </div>
+
+    <div class="contain">
+        <div class="pagination">
+            <a href="/">Home > </a>
+            <a href="/administrador/lista-de-produtos">Lista de Produtos > </a>
+            <p style="margin-top: 15px;">Cadastro de Produtos</p> 
+
+        </div>
     </div>
 
 <div class="align">
     <div class="container-inp">
         <form action="" method="post">
             <div class="mb-3">
-                <label for="formFile" class="form-label">Pratos</label>
-                <input class="form-control" type="text" id="formFile" name="dish">
+                <label for="formFile" class="form-label">Pratos *</label>
+                <input class="form-control" type="text" id="formFile" name="dish" required>
             </div>
             <div class="mb-3">
-                <label for="formFile" class="form-label">Informação do Prato</label>
-                <input class="form-control" type="text" id="formFile" name="info">
+                <label for="formFile" class="form-label">Informações do Prato *</label>
+                <input class="form-control" type="text" id="formFile" name="info" required>
             </div>
             <div class="mb-3">
-                <label for="formFile" class="form-label">Preço</label>
-                <input class="form-control" type="number" id="formFile" name="price">
+                <label for="formFile" class="form-label">Preço *</label>
+                <input class="form-control" type="number" id="formFile" name="price" required>
             </div>
             <div class="mb-3">
-                <label for="formFile" class="form-label">URL da imagem</label>
-                <input class="form-control" type="text" id="formFile" name="url">
+                <label for="formFile" class="form-label">URL da imagem *</label>
+                <input class="form-control" type="text" id="formFile" name="url" required>
             </div>
             <button>Cadastrar</button>
         </form>
