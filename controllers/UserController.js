@@ -1,22 +1,35 @@
-const { Usuario } = require('../models/Usuario')
+const Usuario = require('../models/Usuario')
 
-const UserController = {
-    index: async (req, res) => {
-        let users  = await  Usuario.findAll()
 
-        return res.render('usuarios', { users })
-    },
-    findById: async(req,res)=> {
-        var {id} = req.params;
+async function createUsers(req,res) {
+    const { nameComplet, email, isPassword, admin} = req.body;
+    const createdUser = await Usuario.create({ nameComplet, email, isPassword, admin});
 
-        var user = await Usuario.findOne({
-            where: {
-                firstname: 'vitor'
-            }
-        })
-
-        console.log(user)
-    }
+    return res.json(createdUser);
 }
 
-module.exports = UserController
+
+async function storeUsers(req, res) {
+    const {nameComplet, email, isPassword, admin } = req.body;
+    const createdUser = await Usuario.create(
+        {
+            nameComplet,
+            email,
+            isPassword,
+            admin
+        });
+        console.log(createdUser)
+        return res.redirect('/')
+}
+
+function loginUsers(req,res) {
+    res.render('PageLogin', {
+        titulo: 'Login'
+    })
+}
+
+module.exports = {
+    storeUsers,
+    loginUsers,
+    createUsers
+}

@@ -18,7 +18,7 @@ app.use(methodOverride('_method'))
 // Importar as rotas
 app.use('/', indexRouter);
 app.use('/administrador', indexAdm);
-app.use('/', users)
+app.use('/usuarios', users)
 app.use('/cardapios', menu)
 
 app.set('view engine', 'ejs');

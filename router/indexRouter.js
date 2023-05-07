@@ -8,7 +8,8 @@ const cartController = require('../controllers/cartController');
 const chekoutController = require('../controllers/checkoutController');
 const sucessController = require('../controllers/sucessController')
 const accountController = require('../controllers/accountController');
-const LoginController = require('../controllers/LoginController');
+//const LoginController = require('../controllers/LoginController');
+
 
 router.get('/', indexController.index);
 //router.get('/cardapios', cardapioController.menu);
@@ -17,7 +18,7 @@ router.get('/carrinho', cartController.cart)
 router.get('/finalizacao-pedido', chekoutController.chekout)
 router.get('/compra-efetuada', sucessController.sucess)
 router.get('/usuario', accountController.account);
-router.get('/login-usuario', LoginController.login);
+
 
 
 module.exports = router;
