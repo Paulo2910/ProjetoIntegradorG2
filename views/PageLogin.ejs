@@ -16,37 +16,17 @@
 </div>
 
 <nav>
-    <main>
-        
+    <main>        
         <div>
             <h1>Já Sou cadastrado</h1>
             <form action="" method="POST">
-                <input type="text" name="" id="" placeholder="E-mail">
-                <input type="password" name="" id="" placeholder="Senha">
+                <input type="email" name="email" id="" placeholder="E-mail">
+                <input type="password" name="isPassword" id="" placeholder="Senha">
                 <button>Entrar</button>
-            </form>
-            
-        </div>
 
-        <div>
-            <h1>Não Sou cadastrado</h1>
-            <div class="alert">
-                <% if( typeof errors !== 'undefined'){ %>
-                    <ul>
-                        <% for (let error in errors) { %>
-                            <li><%=errors[error].msg %></li>
-                        <% } %>
-                    </ul>
-                <% } %>
-            </div>
-            <form action="" method="POST">
-                <input type="text" name="nameComplet"  id="" placeholder="Digite seu nome">
-                <input type="text" name="email" id="" placeholder="Digite seu E-mail">
-                <input type="password" name="isPassword" id="" placeholder="Digite sua senha">
-                <button>Cadastre-se</button>
+                <p style="margin-top: 10px;">Ainda não tem cadastro ? <a href="/usuarios/cadastro-do-usuario"> Clique aqui</a></p>
             </form>
-        </div>
-        
+        </div>        
     </main>
 </nav>
     

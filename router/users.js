@@ -12,8 +12,13 @@ const validations = [
 ]
 
 
-router.get('/login-usuario', UserController.loginUsers);
-router.post('/create-users', UserController.createUsers);
-router.post('/login-usuario', validations , UserController.storeUsers)
+router.get('/login-usuario', UserController.pageLogin);
+router.get('/cadastro-do-usuario', UserController.pageCadastro);
+
+router.post('/cadastro-do-usuario', validations, UserController.storeUsers);
+router.post('/login-usuario', UserController.signIn)
+
+//router.post('/create-users', UserController.createUsers);
+
 
 module.exports = router;

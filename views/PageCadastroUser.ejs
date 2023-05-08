@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Pagina de Usuário</title>
+</head>
+<body>
+
+    <%- include ('./partials/Header.ejs') %>
+
+<div class="page-title">
+    <h1><%= titulo %></h1> 
+</div>
+
+<nav>
+    <main>
+        <div>
+            <h1>Não Sou cadastrado</h1>
+            <div class="alert">
+                <% if( typeof errors !== 'undefined'){ %>
+                    <ul>
+                        <% for (let error in errors) { %>
+                            <li><%=errors[error].msg %></li>
+                        <% } %>
+                    </ul>
+                <% } %>
+            </div>
+            <form action="" method="POST">
+                <input type="text" name="nameComplet"  id="" placeholder="Digite seu nome">
+                <input type="text" name="email" id="" placeholder="Digite seu E-mail">
+                <input type="password" name="isPassword" id="" placeholder="Digite sua senha">
+                <button>Cadastre-se</button>
+                
+
+                <p style="margin-top: 10px;">Já sou cadastrado ! <a href="/usuarios/login-usuario"> Clique aqui</a></p>
+            </form>
+        </div>
+        
+    </main>
+</nav>
+    
+</body>
+    <%- include('./partials/Footer.ejs') %> 
+</html>

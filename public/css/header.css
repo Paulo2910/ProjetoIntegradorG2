@@ -59,14 +59,17 @@ nav.container {
     flex-wrap: wrap;
     margin-left: 50px;
     margin-right: 100px;
-    
+}
+
+.container li {
+    font-family: 'Tilt Neon';
 }
 
 .align-mobile a {
     font-size: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;  
     
 }
@@ -140,21 +143,18 @@ nav img {
 
     .container .break  {
         flex-basis: 100%;
-        margin-left: 20%;
-
+        margin-left: 23%;
     }
-
-    .container li {
-        margin-left: 100%;
+    .container ul{
+        margin-left: 15%;
     }
-
     header {
-        height: 365px;
+        height: 300px;
     }
 
     .page-title {
-         top: 280px ;
-         font-size: 30px;
+         top: 200px ;
+         font-size: 25px;
     }
        
 }
