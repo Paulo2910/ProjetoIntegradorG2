@@ -143,7 +143,7 @@ nav img {
 
     .container .break  {
         flex-basis: 100%;
-        margin-left: 23%;
+        margin-left: auto;
     }
     .container ul {
         display: flex;

@@ -395,7 +395,7 @@ section.card button {
 
     .container .logo {
         flex-basis: 100%;
-        margin-left: 23%;
+        margin-left: auto;
     }
 
     .container ul {
@@ -421,6 +421,14 @@ section.card button {
     
     .container-section {
         display: none;
+    }
+
+    #header-content {
+    margin: 40% auto;
+    }
+
+    #header-content input {
+        width: 350px;
     }
 }
 
