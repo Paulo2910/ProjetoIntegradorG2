@@ -145,8 +145,10 @@ nav img {
         flex-basis: 100%;
         margin-left: 23%;
     }
-    .container ul{
-        margin-left: 15%;
+    .container ul {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
     }
     header {
         height: 300px;
