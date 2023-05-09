@@ -55,7 +55,7 @@ async function updateProducts(req, res) {
 
 async function destroyProducts(req, res) {
     const idToDelete =  req.params.id;
-    Menu.destroy({ where: {id: idToDelete} });
+    await Menu.destroy({ where: {id: idToDelete} });
 
     console.log(idToDelete)
     return res.redirect('/administrador/lista-de-produtos')
