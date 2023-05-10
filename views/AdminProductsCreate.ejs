@@ -27,7 +27,7 @@
 
 <div class="align">
     <div class="container-inp">
-        <form action="" method="post">
+        <form action="" method="post" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="formFile" class="form-label">Pratos *</label>
                 <input class="form-control" type="text" id="formFile" name="dish" required>
@@ -42,7 +42,7 @@
             </div>
             <div class="mb-3">
                 <label for="formFile" class="form-label">URL da imagem *</label>
-                <input class="form-control" type="text" id="formFile" name="url" required>
+                <input class="form-control" type="file" id="formFile" name="url" required>
             </div>
             <button>Cadastrar</button>
         </form>
