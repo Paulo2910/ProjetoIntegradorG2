@@ -56,11 +56,11 @@
                <% promo.forEach(el => { %>
                 <section class="card">
                     <div class="icon">
-                        <img src="<%= el.url %>" alt="">
+                        <img src="/menu/<%= el.image %>" alt="">
                     </div>
                     <div class="back-title">   
                         <h3><%= el.dish %></h3>
-                        <p><%= el.info.slice(0,54) %>...</p>
+                        <p><%= el.descriptions.slice(0,54) %>...</p>
 
                         <a href="/produto/<%=el.id%>">Pedir este prato</a>
                         

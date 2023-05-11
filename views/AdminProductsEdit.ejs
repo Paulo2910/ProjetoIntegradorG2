@@ -32,16 +32,24 @@
                 <input class="form-control" type="text" id="formFile" name="dish" value="<%= products.dish%>">
             </div>
             <div class="mb-3">
+                <label for="formFile" class="form-label">Código do Produto*</label>
+                <input class="form-control" type="text" id="formFile" name="sku" value="<%=products.sku%>">
+            </div>
+            <div class="mb-3">
                 <label for="formFile" class="form-label">Informações do Prato *</label>
-                <input class="form-control" type="text" id="formFile" name="info" value="<%= products.info%>">
+                <input class="form-control" type="text" id="formFile" name="info" value="<%= products.descriptions%>">
             </div>
             <div class="mb-3">
                 <label for="formFile" class="form-label">Preço *</label>
-                <input class="form-control" type="number" id="formFile" name="price" value="<%= products.price%>">
+                <input class="form-control" type="text" id="formFile" name="price" value="<%= products.price%>">
+            </div>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Quantidades *</label>
+                <input class="form-control" type="text" id="formFile" name="quantity" value="<%=products.quantity%>">
             </div>
             <div class="mb-3">
                 <label for="formFile" class="form-label">URL da imagem *</label>
-                <input class="form-control" type="text" id="formFile" name="url" value="<%= products.url%>">
+                <input class="form-control" type="file" id="formFile" name="image" value="<%= products.image%>">
             </div>
             <button>Salvar Alterações</button>
         </form>

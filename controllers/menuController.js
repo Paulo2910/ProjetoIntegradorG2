@@ -1,8 +1,8 @@
 const Menu = require('../models/Menu')
 
 async function createMenu(req, res) {
-    const {dish, info, price, url } = req.body;
-    const createdMenu = await Menu.create({dish, info, price, url});
+    const {dish, sku, descriptions, price, quantity, image } = req.body;
+    const createdMenu = await Menu.create({dish, sku, descriptions, price, quantity, image });
 
     return res.json(createdMenu)
 }

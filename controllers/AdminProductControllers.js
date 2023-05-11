@@ -1,13 +1,16 @@
 const Menu = require('../models/Menu')
 
+
 async function storeProducts(req, res) {
-    const {dish, info, price, url } = req.body;
+    const {dish, sku, descriptions, price, quantity, image } = req.body;
     const createdMenu = await Menu.create(
         {
-            dish, 
-            info,
-            price, 
-            url
+            dish,
+            sku,
+            descriptions,
+            price,
+            quantity,
+            image: req.file.filename
         });
         console.log(createdMenu)
         return res.redirect('/administrador/lista-de-produtos')
@@ -35,13 +38,15 @@ async function editProducts (req, res) {
 
 async function updateProducts(req, res) {
     const idUpdate = req.params.id;
-    const  {dish, info, price, url} = req.body;
+    const  {dish, sku, descriptions, price, quantity, image } = req.body;
 
     const toUpdate = await Menu.update({
         dish,
-        info,
+        sku,
+        descriptions,
         price,
-        url
+        quantity,
+        image,
     },
     {
         where: {

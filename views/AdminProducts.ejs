@@ -26,7 +26,7 @@
         <table class="table">
             <thead  style="border: 1px solid black;">
                 <tr>
-                    <th  scope="col" style="width: 10px;border-right: 1px solid black;">CD</th>
+                    <th  scope="col" style="border-right: 1px solid black;">CD</th>
                     <th scope="col">Pratos</th>
                     <th scope="col">Preço</th>
                     <th scope="col">Editar</th>
@@ -36,9 +36,9 @@
             <tbody style="border: 1px solid black;">
                 <%products.forEach(item => { %>
                     <tr>
-                        <th  style="border-right: 1px solid black;text-align: center;" scope="row"><%= item.id%></th>
+                        <th  style="border-right: 1px solid black;text-align: left;" scope="row"><%= item.sku%></th>
                         <td><%= item.dish%></td>
-                        <td>R$ <%= item.price%>,00</td>
+                        <td>R$ <%= item.price%></td>
                         
 
                         <td>

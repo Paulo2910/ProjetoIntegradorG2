@@ -4,9 +4,11 @@ class Menu extends Model {
     static init (sequelize) {
         super.init({
             dish: DataTypes.STRING,
-            info: DataTypes.STRING,
+            sku: DataTypes.NUMBER,
+            descriptions: DataTypes.STRING,
             price: DataTypes.DECIMAL,
-            url: DataTypes.STRING
+            quantity: DataTypes.NUMBER,
+            image: DataTypes.STRING
 
         },{
             sequelize,

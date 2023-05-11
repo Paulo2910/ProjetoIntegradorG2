@@ -20,13 +20,13 @@
                     <section class="card">
                         <a href="/produto/<%=el.id%>">
                             <div class="icon">
-                                <img src="<%= el.url %>" alt="">
+                                <img src="/menu/<%= el.image %>" alt="">
                             </div>
                         </a>
                         <div class="back-title">   
                             <h3><%= el.dish %></h3>
-                            <p><%= el.info %></p>
-                            <span>R$ <%= el.price %>,99</span><br>
+                            <p><%= el.descriptions.slice(0,85) %>...</p>
+                            <span>R$ <%= el.price %></span><br>
                             <button>Pedir este prato</button>
                         </div>
                     </section>

@@ -19,15 +19,18 @@
     <main class="detalhes-produto">
         
         <section class="detalhes-img">
-            <img id="imagemPrato" src="<%=product.url%>" alt="">
+            <img id="imagemPrato" src="/menu/<%=product.image%>" alt="">
         </section>
 
         <section class="detalhes-descricao">            
             <div class="detalhes-prato">
-                
+                <div>
                     <h1 class="nome-prato"><%= product.dish %></h1>
+                    <span style="color: rgba(0, 0, 0, 0.8); font-size: 13px;">SKU: <%= product.sku %></span>
+                </div>
+                    
               
-                <p class="descricao-produto"> <%=product.info%></p>
+                <p class="descricao-produto"> <%=product.descriptions%></p>
             </div>
 
                 <div class="align-info">
@@ -63,7 +66,7 @@
 
             <div class="preco">
                 <h3 class="valor-final">Valor do Prato: </h3> 
-                <p class="valor">R$ <%=product.price%>, 99</p>
+                <p class="valor">R$ <%=product.price%></p>
             </div>
 
             <button class="adicionar-carrinho" type="submit" >ADICIONAR AO CARRINHO</button>
