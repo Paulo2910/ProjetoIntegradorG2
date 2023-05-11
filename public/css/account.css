@@ -246,36 +246,23 @@ select{
 
 #endereco{ 
     display: none;
-    width: 700px;
+    width: 100%;
 }
 
 #formEndereco{
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin-left: 20%;
     height: 350px;
-    justify-content: space-between;
+    
 }
 
 #pedidos{
     display: none;
-    width: 700px;
+    width: 100%;
+    margin-top: -280px;
 }
 
-#cartoes{
-    display: none;
-    width: 700px;
-}
-
-#formCartoes{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin-left: 20%; 
-    height: 350px;
-    justify-content: space-between;
-}
 
 
 @media (max-width: 720px) {
@@ -290,5 +277,9 @@ select{
 
     .align-email {
         width: 97%;
+    }
+
+    #pedidos {
+        margin-top: -120px;
     }
 }
