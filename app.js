@@ -7,6 +7,7 @@ const app = express(); // Guarda a execução do express.
 const PORT = process.env.PORT || 3000;
 const indexRouter = require('./router/indexRouter');
 const indexAdm = require('./router/indexAdm');
+const category = require('./router/category')
 const users = require('./router/users');
 const menu = require('./router/menu');
 const logMiddleware = require('./middlewares/authentication')
@@ -19,9 +20,10 @@ app.use(logMiddleware)
 
 // Importar as rotas
 app.use('/', indexRouter);
-app.use('/administrador', indexAdm);
 app.use('/usuarios', users)
 app.use('/cardapios', menu)
+app.use('/administrador', indexAdm);
+app.use('/administrador', category)
 
 app.set('view engine', 'ejs');
 app.set('views', './views')

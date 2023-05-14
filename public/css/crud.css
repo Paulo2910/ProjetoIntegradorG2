@@ -64,6 +64,15 @@
 
 }
 
+.alert p {
+    font-size: 10px;
+    color: #C3103C;
+    margin-top: -15px;
+    margin-left: -5px;
+    margin-bottom: -20px;
+}
+
+
 
 @media (max-width: 720px) {
     .container-inp input {

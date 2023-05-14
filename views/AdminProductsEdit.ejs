@@ -16,17 +16,20 @@
         <h1><%=titulo%></h1> 
     </div>
 
-    <div class="contain">
-        <div class="pagination">
-            <a href="/">Home > </a>
-            <a href="/administrador/lista-de-produtos">Lista de Produtos > </a>
-            <p style="margin-top: 15px;">Editando o Produto</p>
-        </div>
-    </div>
+    <ul class="nav nav-tabs" style="margin-top: 30px;">
+        <li class="nav-item">
+          <a class="nav-link active" href="/administrador/lista-de-produtos">Produtos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Editando Produtos</a>
+        </li>
+      </ul>
+
+    
 
 <div class="align">
     <div class="container-inp">
-        <form action="/administrador/editando-produtos/<%= products.id %>?_method=PUT" method="post">
+        <form action="/administrador/editando-produtos/<%= products.id %>?_method=PUT" method="post" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="formFile" class="form-label">Pratos *</label>
                 <input class="form-control" type="text" id="formFile" name="dish" value="<%= products.dish%>">
@@ -37,7 +40,11 @@
             </div>
             <div class="mb-3">
                 <label for="formFile" class="form-label">Informações do Prato *</label>
-                <input class="form-control" type="text" id="formFile" name="info" value="<%= products.descriptions%>">
+                <input class="form-control" type="text" id="formFile" name="descriptions" value="<%= products.descriptions%>">
+            </div>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Categoria *</label>
+                <input class="form-control" type="number" id="formFile" name="id_category" value="<%= products.id_category%>" max="2" min="1">
             </div>
             <div class="mb-3">
                 <label for="formFile" class="form-label">Preço *</label>

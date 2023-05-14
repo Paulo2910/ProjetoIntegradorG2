@@ -1,4 +1,6 @@
 const {Model, DataTypes} = require('sequelize');
+const Category = require('./Category')
+
 
 class Menu extends Model {
     static init (sequelize) {
@@ -8,12 +10,15 @@ class Menu extends Model {
             descriptions: DataTypes.STRING,
             price: DataTypes.DECIMAL,
             quantity: DataTypes.NUMBER,
-            image: DataTypes.STRING
+            image: DataTypes.STRING,
 
         },{
             sequelize,
             tableName: 'menu'
         })
+       
+       
+        
     }
 }
 

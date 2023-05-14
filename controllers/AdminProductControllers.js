@@ -1,20 +1,35 @@
+const Category = require('../models/Category');
 const Menu = require('../models/Menu')
+//const { validationResult } = require('express-validator')//Método de validação dos inputs
 
 
 async function storeProducts(req, res) {
-    const {dish, sku, descriptions, price, quantity, image } = req.body;
-    const createdMenu = await Menu.create(
-        {
-            dish,
-            sku,
-            descriptions,
-            price,
-            quantity,
-            image: req.file.filename
-        });
-        console.log(createdMenu)
-        return res.redirect('/administrador/lista-de-produtos')
-}
+    const {dish, sku, descriptions,id_category, price, quantity, image } = req.body;
+    //const errors = validationResult(req)
+
+    /*if(!errors.isEmpty()) {
+        console.log(errors.mapped())
+        return res.render('AdminProductsCreate', {
+            errors: errors.mapped(),
+            products,
+            titulo: 'Efetue seu Cadastro'
+            })
+        }*/
+
+        const createdMenu = await Menu.create(
+            {
+                dish,
+                sku,
+                descriptions,
+                id_category,
+                price,
+                quantity,
+                image: req.file.filename
+            });
+            console.log(createdMenu)
+            return res.redirect('/administrador/lista-de-produtos')
+        
+    }
 
 async function listProduct(req, res){
     const products = await Menu.findAll()
@@ -38,13 +53,14 @@ async function editProducts (req, res) {
 
 async function updateProducts(req, res) {
     const idUpdate = req.params.id;
-    const  {dish, sku, descriptions, price, quantity, image } = req.body;
+    const {dish, sku, descriptions,id_category, price, quantity, image } = req.body;
 
     const toUpdate = await Menu.update({
         dish,
         sku,
         descriptions,
         price,
+        id_category,
         quantity,
         image,
     },
@@ -60,7 +76,11 @@ async function updateProducts(req, res) {
 
 async function destroyProducts(req, res) {
     const idToDelete =  req.params.id;
-    await Menu.destroy({ where: {id: idToDelete} });
+
+    await Menu.destroy({
+         where: {id: idToDelete} }
+         
+        );
 
     console.log(idToDelete)
     return res.redirect('/administrador/lista-de-produtos')

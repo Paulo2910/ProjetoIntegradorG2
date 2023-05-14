@@ -16,42 +16,54 @@
         <h1><%=titulo%></h1> 
     </div>
 
-    <div class="contain">
-        <div class="pagination">
-            <a href="/">Home > </a>
-            <a href="/administrador/lista-de-produtos">Lista de Produtos > </a>
-            <p style="margin-top: 15px;">Cadastro de Produtos</p> 
-
-        </div>
-    </div>
+    <ul class="nav nav-tabs" style="margin-top: 30px;">
+        <li class="nav-item">
+          <a class="nav-link active" href="/administrador/lista-de-produtos">Produtos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/administrador/cadastrando-produtos">Cadastrar Produtos</a>
+        </li>
+      </ul>
 
 <div class="align">
     <div class="container-inp">
+        
         <form action="" method="post" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="formFile" class="form-label">Pratos *</label>
-                <input class="form-control" type="text" id="formFile" name="dish" required>
+                <input class="form-control" type="text" id="formFile" name="dish">
+                <div class="alert">
+                    <% if( typeof errors !== 'undefined'){ %>
+                        <% for (let error in errors) { %>
+                            <p><%=errors[error].msg %></p>
+                        <% } %>
+                    <% } %>
+                </div>
             </div>
             <div class="mb-3">
                 <label for="formFile" class="form-label">Código do Produto*</label>
-                <input class="form-control" type="text" id="formFile" name="sku" required>
+                <input class="form-control" type="text" id="formFile" name="sku" >
             </div>
             <div class="mb-3">
                 <label for="formFile" class="form-label">Informações do Prato *</label>
-                <input class="form-control" type="text" id="formFile" name="descriptions" required>
+                <input class="form-control" type="text" id="formFile" name="descriptions">
+            </div>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Categoria *</label>
+                <input class="form-control" type="number" id="formFile" name="id_category" max="2" min="1">
             </div>
             <div class="mb-3">
                 <label for="formFile" class="form-label">Preço *</label>
-                <input class="form-control" type="text" id="formFile" name="price" required>
+                <input class="form-control" type="text" id="formFile" name="price">
             </div>
 
             <div class="mb-3">
                 <label for="formFile" class="form-label">Quantidades *</label>
-                <input class="form-control" type="text" id="formFile" name="quantity" required>
+                <input class="form-control" type="text" id="formFile" name="quantity">
             </div>
             <div class="mb-3">
                 <label for="formFile" class="form-label">URL da imagem *</label>
-                <input class="form-control" type="file" id="formFile" name="image" required>
+                <input class="form-control" type="file" id="formFile" name="image">
             </div>
             <button>Cadastrar</button>
         </form>

@@ -34,7 +34,7 @@ async function storeUsers(req, res) {
             console.log(errors.mapped())
             return res.render('PageCadastroUser', {
                 errors: errors.mapped(),
-                titulo: 'Efetue o Cadastro'
+                titulo: 'Efetue seu Cadastro'
             })
     } else {
         const createdUser = await Usuario.create({

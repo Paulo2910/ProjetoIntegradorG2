@@ -28,6 +28,10 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
+      id_category: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+      },
       quantity: {
         type: Sequelize.STRING,
         allowNull: false 

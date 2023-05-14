@@ -2,6 +2,7 @@
 const Sequelize = require('sequelize');
 const Menu = require('../models/Menu')
 const Usuario = require('../models/Usuario')
+const Category = require('../models/Category')
 
 //importar as configurações
 const databaseConfigurations = require('../config/database');
@@ -10,6 +11,7 @@ const databaseConfigurations = require('../config/database');
 const connection = new Sequelize(databaseConfigurations);
 Menu.init(connection)
 Usuario.init(connection)
+Category.init(connection)
 
 // Exportando a Conexão
 module.exports = connection;
