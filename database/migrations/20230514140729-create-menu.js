@@ -30,7 +30,13 @@ module.exports = {
       },
       id_category: {
         type: Sequelize.INTEGER,
-        allowNull: false
+        allowNull: false,
+        references: {
+          model: 'Category',
+          key: 'id',
+          onDelete: 'CASCADE',
+          onUpdate: 'CASCADE'
+        }
       },
       quantity: {
         type: Sequelize.STRING,

@@ -13,7 +13,7 @@ async function listCategory(req, res) {
         include: {
             model: Menu,
             required: true,
-            as: 'categoria'
+            as: 'category'
         }
     });
     console.log(category)
@@ -25,8 +25,8 @@ async function listCategory(req, res) {
 }
 
 async function createCategory (req, res) {
-    const {category, slug, id_category} = req.body;
-    const createdCategory = await Category.create({ category, slug, id_category})
+    const {category, slug} = req.body;
+    const createdCategory = await Category.create({ category, slug})
     console.log(createdCategory)
 
      return res.redirect('/administrador/lista-de-categorias')
@@ -46,12 +46,11 @@ async function editCategory(req, res) {
 
 async function updateCategory(req, res) {
     const idCategory = req.params.id;
-    const {category, slug, id_category} = req.body
+    const {category, slug} = req.body
 
     const toUpdate = await Category.update({
         category,
         slug,
-        id_category
     },
     {
         where: {

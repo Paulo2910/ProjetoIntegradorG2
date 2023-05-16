@@ -11,6 +11,7 @@ const validations = [
     body('isPassword').notEmpty().withMessage("O campo Senha não pode ficar vazio.")
 ]
 
+router.get('/usuario', UserController.pageUsers);
 
 router.get('/login-usuario', UserController.pageLogin);
 router.get('/cadastro-do-usuario', UserController.pageCadastro);

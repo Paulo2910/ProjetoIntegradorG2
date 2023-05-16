@@ -5,7 +5,6 @@ class Category extends Model {
         super.init({
             category: DataTypes.STRING,
             slug: DataTypes.STRING,
-            id_category: DataTypes.INTEGER
 
         },{
             sequelize,
@@ -13,9 +12,9 @@ class Category extends Model {
         })
 
         Category.associate = (listaModels) => {
-            Category.belongsTo(listaModels.Menu, {
+            Category.hasMany(listaModels.Menu, {
                 foreignKey: 'id_category',
-                as: 'categorias' 
+                as: 'menu' 
             })
         }
     }

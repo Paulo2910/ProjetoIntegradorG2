@@ -8,6 +8,7 @@ class Menu extends Model {
             dish: DataTypes.STRING,
             sku: DataTypes.NUMBER,
             descriptions: DataTypes.STRING,
+            id_category: DataTypes.NUMBER,
             price: DataTypes.DECIMAL,
             quantity: DataTypes.NUMBER,
             image: DataTypes.STRING,
@@ -16,9 +17,13 @@ class Menu extends Model {
             sequelize,
             tableName: 'menu'
         })
-       
-       
-        
+
+        Menu.associate = (listaModels) => {
+            Menu.belongsTo(listaModels.Category, {
+                foreignKey: 'id_category',
+                as: 'category' 
+            })
+        }
     }
 }
 

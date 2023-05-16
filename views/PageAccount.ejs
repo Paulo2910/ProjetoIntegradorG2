@@ -11,7 +11,7 @@
     
     <%-include('./partials/Header.ejs') %>
     <div class="page-title">
-        <h1><%= titulo %></h1> 
+        <h1>Olá! <%=usuario.nameComplet%></h1> 
     </div>
 
     <div class="contain">
@@ -29,7 +29,7 @@
                 <nav id="nav-account">
                     <img id="profilePicture" src="/img/User.png" >
 
-                    <h2 id="saudacao">Olá, <%=user.nameComplet%>!</h2>
+                    <h2 id="saudacao"><%=usuario.nameComplet%></h2>
 
                     <ul id="accountOption" style="list-style: none">
                         <li class="nav" id="btn-dados">Dados Pessoais</li>
@@ -53,13 +53,13 @@
                                 </div>
 
                                 <div class="align">
-                                    <input type="text" id="name"> 
+                                    <input type="text" id="name" value="<%=usuario.nameComplet%>"> 
                                     <input type="text" id="sobrenome">
                                 </div>
                             
                                 <div class="align-email">
                                     <label for="email">E-mail</label><br>
-                                    <input type="email" id="email">
+                                    <input type="email" id="email" value="<%=usuario.email%>">
                                 </div>
                                 
                                 <div class="align-label">

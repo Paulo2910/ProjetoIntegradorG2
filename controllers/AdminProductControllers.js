@@ -5,18 +5,9 @@ const Menu = require('../models/Menu')
 
 async function storeProducts(req, res) {
     const {dish, sku, descriptions,id_category, price, quantity, image } = req.body;
-    //const errors = validationResult(req)
 
-    /*if(!errors.isEmpty()) {
-        console.log(errors.mapped())
-        return res.render('AdminProductsCreate', {
-            errors: errors.mapped(),
-            products,
-            titulo: 'Efetue seu Cadastro'
-            })
-        }*/
 
-        const createdMenu = await Menu.create(
+       const createdMenu = await Menu.create(
             {
                 dish,
                 sku,

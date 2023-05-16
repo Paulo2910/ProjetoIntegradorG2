@@ -13,6 +13,7 @@ async function menu(req, res){
 
     res.render('PageMenu',{
         dishs,
+        usuario: req.session.usuario,
         titulo: 'Menu'
     })
 }

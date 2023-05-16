@@ -18,13 +18,13 @@ module.exports = {
       type: Sequelize.STRING,
       allowNull: false
     },
-    id_category: {
+    /*id_category: {
       type: Sequelize.INTEGER,
       references: {
         model: 'Menu',
         key: 'id'
       }
-    },
+    },*/
     createdAt:{
       type: Sequelize.DATE,
       allowNull: false

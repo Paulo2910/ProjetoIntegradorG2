@@ -1,6 +1,7 @@
 const express = require('express'); // Importar os modulos usados  no codigo
 const methodOverride = require('method-override');
 const path = require("path")
+const session = require('express-session')
 
 // Configurar aplicação
 const app = express(); // Guarda a execução do express.
@@ -13,6 +14,11 @@ const menu = require('./router/menu');
 const logMiddleware = require('./middlewares/authentication')
 require('./database'); // Nova configuração
 
+app.use(session({
+    secret: "DimSum",
+    resave: true,
+    saveUninitialized:true
+}))
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(methodOverride('_method'));

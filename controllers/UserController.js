@@ -48,11 +48,22 @@ async function storeUsers(req, res) {
     }
 }
 
+async function pageUsers(req,res) {
+    const users = await Usuario.findAll()
+    res.render('PageAccount',{
+        users,
+        usuario: req.session.usuario
+    })
+
+   
+}
+
 async function signIn(req,res) {
     const user = await Usuario.findOne({
-        attributes: ['email', 'isPassword'],
+        attributes: ['nameComplet','email', 'isPassword'],
         where: {
             email: req.body.email,
+            
         }
     });
 
@@ -62,9 +73,13 @@ async function signIn(req,res) {
 
     if(!(await bcrypt.compare(req.body.isPassword, user.isPassword))) {
         return res.send('Senha incorreta ')
-    } else {
-        return res.redirect('/')
+    } else { 
+        req.session.usuario = user
+        return res.redirect('/usuarios/usuario')
+        
     }
+
+    
 }
 
 
@@ -72,6 +87,7 @@ async function signIn(req,res) {
 module.exports = {
     storeUsers,
     pageLogin,
+    pageUsers,
     pageCadastro,
     createUsers,
     signIn
